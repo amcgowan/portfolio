@@ -1,0 +1,7 @@
+.navbar-fixed-top+.jumbotron{margin-top:50px}
+.technologies{text-align:center}.technologies i{font-size:30px}
+.technologies .displays{position:relative;left:50%;height:33px}.technologies .displays .center{width:84px;display:block;position:absolute;left:-42px}
+.technologies .displays i{position:absolute}.technologies .displays i.icon-desktop{font-size:36px;left:3px;top:0}
+.technologies .displays i.icon-mobile-phone{font-size:38px;left:27px;top:5px}.technologies .displays i.icon-mobile-phone:after{content:" ";display:block;background:#fff;width:12px;height:16px;top:11px;left:2px;position:absolute}
+.technologies .displays i.icon-laptop{left:35px;top:1px;font-size:40px}
+.carousel div.item{height:400px;background:#494c43}

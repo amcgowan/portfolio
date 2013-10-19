@@ -1,0 +1,163 @@
+// Colors
+@spin: 0deg;
+@saturate: 0%;
+@desaturate: 10%;
+@lighten: 5%;
+@darken: 0%;
+
+@mcPrimary: lighten(darken(saturate(desaturate(spin(#97AD5E, @spin),@desaturate),@saturate),@darken),@lighten);
+@mcSecondaryA: lighten(darken(saturate(desaturate(spin(#AD5E92, @spin),@desaturate),@saturate),@darken),@lighten);
+@mcSecondaryB: lighten(darken(saturate(desaturate(spin(#eb7244, @spin),@desaturate),@saturate),@darken),@lighten);
+@mcComplimentary: lighten(darken(saturate(desaturate(spin(#5E64AD, @spin),@desaturate),@saturate),@darken),@lighten);
+
+// Greys
+@darkGrey: #494c43;
+@mediumGrey: #737376;
+@background: #f9f9f9;
+
+// Text
+@text: #F2ECEC;
+@textMedium: #AEBBAE;
+@textInverse: #06030E;
+
+// Grid
+@g1: 5px;
+@g2: 10px;
+@gridMicro: @g1;
+@gridMni: @g2;
+@gridMinor: @g2*2;
+@gridMajor: @g2*4;
+
+
+// Font 
+@fontFamily: 'Oswald', Helvetica, Arial, sans-serif;
+@fontBold: 'Raleway', Helvetica, Arial, sans-serif;
+@fontNormal: 12pt;
+@fontHuge: @fontNormal*3;
+/*body {
+	font-size: @fontNormal;
+	font-family: @fontFamily;
+	background: lighten(@darkGrey,10%);
+	padding: 0px;
+	margin: 0px;
+	> nav, > header, > section, > footer {
+		width: 100%;
+		display: block;
+		
+		> div {
+			padding: @gridMinor;
+			margin: 0px auto;
+			width: 960px;
+		}
+	}
+	> nav > div{
+		height: @gridMinor;
+		background: @darkGrey;
+	}
+	> header {
+		height: @gridMajor * 5;
+		
+		>div {
+			background: @background;
+		}
+		h1 {
+			font-size: @fontHuge; 
+		}
+		.cap {
+			height: @gridMajor * 3;
+			width: @gridMajor * 3;
+			background: @darkGrey;
+			position: relative;
+			overflow: hidden;
+			border-radius: 10px;
+			float: left;
+			&:after {
+				content: "A";
+				position: absolute;
+				display: block;
+				color: @background;
+				font-size: 168px;
+				top: -38px;
+				left: 4px;
+				font-family: @fontBold;
+				
+			}
+		}
+	}
+	> section {
+		color: @background;
+		&.primary > div {
+			background: @mcPrimary;
+		}
+		&.secondaryA > div {
+			background: @mcSecondaryA;
+		}
+		&.secondaryB > div {
+			background: @mcSecondaryB;
+		}
+		&.complimentary > div {
+			background: @mcComplimentary;
+		}
+	}
+	> footer > div {
+		background: @darkGrey;
+	}
+}*/
+
+
+
+// Bootstrap stusff
+.navbar-fixed-top + .jumbotron {
+	margin-top: 50px;
+}
+.technologies {
+	text-align: center;
+	i {
+		font-size: 30px;
+	}
+	.displays {
+		position: relative;
+		left: 50%;
+		height: 33px;
+		.center {
+			width: 84px;
+			display: block;
+			position: absolute;
+			left: -42px;
+		}
+		i {
+			position: absolute;
+			&.icon-desktop {
+				font-size: 36px;
+				left: 3px;
+				top: 0px;
+			}
+			&.icon-mobile-phone {
+				font-size: 38px;
+				left: 27px;
+				top: 5px;
+				&:after {
+					content: " ";
+					display: block;
+					background: white;
+					width: 12px;
+					height: 16px;
+					top: 11px;
+					left: 2px;
+					position: absolute;
+				}
+			}
+			&.icon-laptop {
+				left: 35px;
+				top: 1px;
+				font-size: 40px;
+			}
+		}
+	}
+}
+.carousel {
+	div.item {
+		height: 400px;
+		background: @darkGrey;
+	}
+}
