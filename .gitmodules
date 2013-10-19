@@ -1,3 +1,6 @@
 [submodule "bootstrap-theme-mcgowan"]
 	path = bootstrap-theme-mcgowan
 	url = git@github.com:amcgowan/bootstrap-theme.git
+[submodule "bootstrap-3.0.0"]
+	path = bootstrap-3.0.0
+	url = git@github.com:twbs/bootstrap.git
