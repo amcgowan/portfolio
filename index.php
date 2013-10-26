@@ -7,6 +7,7 @@
     <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="styles/mcgowan.css" rel="stylesheet" media="screen">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -80,64 +81,84 @@
   			<p>Not only will your site look good, but it can connect to a database do blah blh blha</p>
   		</div>
   	</div>
-  	<div id="carousel-example-captions" class="carousel slide bs-docs-carousel-example">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
-          <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <div class="carousel-caption">
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="carousel-caption">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="carousel-caption">
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
-          <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
-          <span class="icon-next"></span>
-        </a>
-      </div>   
-   <div class="container">
-   		<h2>Recent Work</h2>
-   		<div class="col-sm-6 col-md-3">
-   			<div style="background: red; width: 100%; height: 40px;">
-   			
-   			</div>
+    <section id="recent-work">  
+	   <div class="container">
+	   		<h2>Recent Work</h2>
+	   		<div class="col-sm-6 col-md-3">
+	   			<div style="background: red; width: 100%; height: 40px;">
+	   			
+	   			</div>
+	   		</div>
+	   		<div class="col-sm-6 col-md-3">
+	   			<div style="background: red; width: 100%; height: 40px;">
+	   			
+	   			</div>
+	   		</div>
+	   		<div class="col-sm-6 col-md-3">
+	   			<div style="background: red; width: 100%; height: 40px;">
+	   			
+	   			</div>
+	   		</div>
+	   		<div class="col-sm-6 col-md-3">
+	   			<div style="background: red; width: 100%; height: 40px;">
+	   			
+	   			</div>
+	   		</div>
+	   </div>
+   </section>
+   <section id="work-experience">
+	   	<div class="container">
+		   <h2>Work Experience</h2>
+		   <article>
+			   <div class="col-md-6">
+			   		<div class="rubrix-logo">
+			   			<div class="square">
+				   			<p class="r">r</p>
+			   			</div>
+			   			<div class="circle"></div>
+			   			<div class="rubrix-i"></div>
+			   			<p class="rubrix">rubrix</p>
+			   		</div>
+			   </div>
+			   <div class="col-md-6">
+			   		<h3>
+			   			Web developer - Discovery Software
+			   		</h3>
+			   		<p class="text-muted">
+			   			2012 - Present
+			   		</p>
+			   		<p>As part of the Rubrix team I primarily develop user interfaces that interact with our RESTful API. My latest work has involved updating the interface across the entire application to use a new chrome, and use Twitter Bootstrap</p>
+			   		<a class="btn btn-default">
+			   			More info
+			   		</a>
+			   </div>
+		   </article>
+		   <article>
+			   <div class="col-md-6">
+				   <h3>
+				   		Web developer - eVision Media
+				   </h3>
+				   <p class="text-muted">
+				   		2010 - 2012
+				   </p>
+				   <p>Developed websites to meet specific client needs. My focus here ranged from developing back end functionality with PHP and MySQL to implementing the user interface based on a designers image. A variety of frameworks were used here including WordPress, Drupal, Magento, and CakePHP</p>
+				   <a class="btn btn-default">
+				   	More info
+				   </a>
+			   </div>
+			   <div class="col-md-6">
+			   	
+			   </div>
+		</article>
+   </section>
+   <section id="about">
+   	<div class="container">
+   		<h2>About Me</h2>
+   		<div class="col-md-12">
+   			<p>I have been working as a professional web developer with 3+ years of experience. I obtained my Bachelor's of Computer Information Systems in 2010. My studies did not strictly focus on web development, they focused on principles of software development and programming. This has given me a solid foundation to work with in the world of web development which forces you to dive into more than five different programming languages on a daily basis, and keep up with new technology and frameworks.</p>
    		</div>
-   		<div class="col-sm-6 col-md-3">
-   			<div style="background: red; width: 100%; height: 40px;">
-   			
-   			</div>
-   		</div>
-   		<div class="col-sm-6 col-md-3">
-   			<div style="background: red; width: 100%; height: 40px;">
-   			
-   			</div>
-   		</div>
-   		<div class="col-sm-6 col-md-3">
-   			<div style="background: red; width: 100%; height: 40px;">
-   			
-   			</div>
-   		</div>
-   </div>
-   
-   
+   	</div>
+   </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
