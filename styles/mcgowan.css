@@ -1,3 +1,7 @@
+.rubrix-logo{font-family:'Open Sans',sans-serif;position:relative}.rubrix-logo .square{width:80px;height:80px;display:block;background:#494c43;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px;overflow:hidden;position:absolute}.rubrix-logo .square .r{color:#fff;top:-55px;left:14px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);position:absolute;font-size:10em;font-weight:bold}
+.rubrix-logo .circle{background:#737376;width:30px;height:30px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;border:3px solid #fff;position:absolute;top:24px;left:-20px}
+.rubrix-logo .rubrix{font-weight:bold;font-size:2.5em;position:absolute;top:90px;left:-12px;letter-spacing:-2px}.rubrix-logo .rubrix:after{content:"TM";position:absolute;left:99px;font-size:.25em;letter-spacing:0;top:15.5px;color:#737376}
+.rubrix-logo .rubrix-i{width:7px;height:7px;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;position:absolute;background:#737376;top:101px;left:59px;display:block;z-index:2;border:1px solid #fff}
 .navbar-fixed-top+.jumbotron{margin-top:50px}
 .technologies{text-align:center}.technologies i{font-size:30px}
 .technologies .displays{position:relative;left:50%;height:33px}.technologies .displays .center{width:84px;display:block;position:absolute;left:-42px}

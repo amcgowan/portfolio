@@ -1,3 +1,4 @@
+@import "elements.less";
 // Colors
 @spin: 0deg;
 @saturate: 0%;
@@ -32,6 +33,7 @@
 // Font 
 @fontFamily: 'Oswald', Helvetica, Arial, sans-serif;
 @fontBold: 'Raleway', Helvetica, Arial, sans-serif;
+@fontOpen: 'Open Sans', sans-serif;
 @fontNormal: 12pt;
 @fontHuge: @fontNormal*3;
 /*body {
@@ -104,6 +106,71 @@
 	}
 }*/
 
+// Rubrix Logo
+.rubrix-logo {
+	font-family: @fontOpen;
+	position: relative;
+	
+	.square {
+		width: 80px;
+		height: 80px;
+		display: block;
+		background: @darkGrey;
+		.rotation(45deg);
+		.rounded(14px);
+		overflow: hidden;
+		position: absolute;
+		.r {
+			color: #fff;
+			top: -55px;
+			left: 14px;
+			.rotation(-45deg);
+			position: absolute;
+			font-size: 10em;
+			font-weight: bold;
+		}
+	}
+	.circle {
+		background: @mediumGrey;
+		width: 30px;
+		height: 30px;
+		.rounded(30px);
+		border: 3px solid #fff;
+		position: absolute;
+		top: 24px;
+		left: -20px;
+	}
+	.rubrix {
+		font-weight: bold;
+		font-size: 2.5em;
+		position: absolute;
+		top: 90px;
+		left: -12px;
+		letter-spacing: -2px;
+		&:after {
+			content: "TM";
+			position: absolute;
+			left: 99px;
+			font-size: 0.25em;
+			letter-spacing: 0px;
+			top: 15.5px;
+			color: @mediumGrey;
+			
+		}
+	}
+	.rubrix-i {
+		width: 7px;
+		height: 7px;
+		.rounded(7px);
+		position:absolute;
+		background: @mediumGrey;
+		top: 101px;
+		left: 59px;
+		display: block;
+		z-index: 2;
+		border: 1px solid white;
+	}
+}
 
 
 // Bootstrap stusff
