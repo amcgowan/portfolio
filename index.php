@@ -110,7 +110,7 @@
 	   	<div class="container">
 		   <h2>Work Experience</h2>
 		   <article>
-			   <div class="col-md-6">
+			   <div class="logo col-md-6 col-sm-3 hidden-xs">
 			   		<div class="rubrix-logo">
 			   			<div class="square">
 				   			<p class="r">r</p>
@@ -120,7 +120,7 @@
 			   			<p class="rubrix">rubrix</p>
 			   		</div>
 			   </div>
-			   <div class="col-md-6">
+			   <div class="col-md-6 col-sm-9">
 			   		<h3>
 			   			Web developer - Discovery Software
 			   		</h3>
@@ -134,7 +134,7 @@
 			   </div>
 		   </article>
 		   <article>
-			   <div class="col-md-6">
+			   <div class="col-md-6 col-sm-9">
 				   <h3>
 				   		Web developer - eVision Media
 				   </h3>
@@ -146,8 +146,13 @@
 				   	More info
 				   </a>
 			   </div>
-			   <div class="col-md-6">
-			   	
+			   <div class="col-md-6 col-sm-3 hidden-xs">
+			   		<div class="techno-logos">
+			   		<object type="image/svg+xml" data="svg/wordpress.svg" class="drupal logo"></object>
+			   		<object type="image/svg+xml" data="svg/magento.svg" class="magento logo"></object>
+			   		<object type="image/svg+xml" data="svg/drupal.svg" class="drupal logo"></object>
+			   		<object type="image/svg+xml" data="svg/cakephp.svg" class="cakephp logo"></object>
+			   		</div>
 			   </div>
 		</article>
    </section>
