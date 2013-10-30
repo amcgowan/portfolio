@@ -1,0 +1,39 @@
+@spin: 0deg;
+@saturate: 0%;
+@desaturate: 10%;
+@lighten: 5%;
+@darken: 0%;
+
+@mcPrimary: lighten(darken(saturate(desaturate(spin(#97AD5E, @spin),@desaturate),@saturate),@darken),@lighten);
+@mcSecondaryA: lighten(darken(saturate(desaturate(spin(#AD5E92, @spin),@desaturate),@saturate),@darken),@lighten);
+@mcSecondaryB: lighten(darken(saturate(desaturate(spin(#eb7244, @spin),@desaturate),@saturate),@darken),@lighten);
+@mcComplimentary: lighten(darken(saturate(desaturate(spin(#5E64AD, @spin),@desaturate),@saturate),@darken),@lighten);
+
+// Greys
+@black: darken(@darkGrey, 20%);
+@darkishGrey: darken(@mediumGrey, 25%);
+@darkGrey: #494c43;
+@mediumGrey: #737376;
+@lighterGrey: lighten(@mediumGrey, 20%);
+@background: #f9f9f9;
+
+// Text
+@text: #F2ECEC;
+@textMedium: #AEBBAE;
+@textInverse: #06030E;
+
+// Grid
+@g1: 5px;
+@g2: 10px;
+@gridMicro: @g1;
+@gridMni: @g2;
+@gridMinor: @g2*2;
+@gridMajor: @g2*4;
+
+
+// Font 
+@fontFamily: 'Oswald', Helvetica, Arial, sans-serif;
+@fontBold: 'Raleway', Helvetica, Arial, sans-serif;
+@fontOpen: 'Open Sans', sans-serif;
+@fontNormal: 12pt;
+@fontHuge: @fontNormal*3;

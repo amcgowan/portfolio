@@ -1,41 +1,8 @@
 @import "elements.less";
+@import "variables.less";
+
 // Colors
-@spin: 0deg;
-@saturate: 0%;
-@desaturate: 10%;
-@lighten: 5%;
-@darken: 0%;
 
-@mcPrimary: lighten(darken(saturate(desaturate(spin(#97AD5E, @spin),@desaturate),@saturate),@darken),@lighten);
-@mcSecondaryA: lighten(darken(saturate(desaturate(spin(#AD5E92, @spin),@desaturate),@saturate),@darken),@lighten);
-@mcSecondaryB: lighten(darken(saturate(desaturate(spin(#eb7244, @spin),@desaturate),@saturate),@darken),@lighten);
-@mcComplimentary: lighten(darken(saturate(desaturate(spin(#5E64AD, @spin),@desaturate),@saturate),@darken),@lighten);
-
-// Greys
-@darkGrey: #494c43;
-@mediumGrey: #737376;
-@background: #f9f9f9;
-
-// Text
-@text: #F2ECEC;
-@textMedium: #AEBBAE;
-@textInverse: #06030E;
-
-// Grid
-@g1: 5px;
-@g2: 10px;
-@gridMicro: @g1;
-@gridMni: @g2;
-@gridMinor: @g2*2;
-@gridMajor: @g2*4;
-
-
-// Font 
-@fontFamily: 'Oswald', Helvetica, Arial, sans-serif;
-@fontBold: 'Raleway', Helvetica, Arial, sans-serif;
-@fontOpen: 'Open Sans', sans-serif;
-@fontNormal: 12pt;
-@fontHuge: @fontNormal*3;
 /*body {
 	font-size: @fontNormal;
 	font-family: @fontFamily;
@@ -105,12 +72,34 @@
 		background: @darkGrey;
 	}
 }*/
-
+// Techno logos 
+.techno-logos {
+	width: 160px;
+	display: block;
+	position: relative;
+	left: 50%;
+	margin-left: -80px;
+	margin-top: 20px;
+	.logo {
+		width: 75px;
+		height: 75px;
+		padding: 5px;
+	}
+}
 // Rubrix Logo
+.logo {
+	text-align: center;
+}
 .rubrix-logo {
 	font-family: @fontOpen;
 	position: relative;
-	
+	width: 125px;
+	height: 145px;
+	padding-top: 12px;
+	padding-left: 20px;
+	left: 50%;
+	margin-top: 40px;
+	margin-left: -62px;
 	.square {
 		width: 80px;
 		height: 80px;
@@ -137,15 +126,15 @@
 		.rounded(30px);
 		border: 3px solid #fff;
 		position: absolute;
-		top: 24px;
-		left: -20px;
+		top: 36px;
+		left: 0px;
 	}
 	.rubrix {
 		font-weight: bold;
 		font-size: 2.5em;
 		position: absolute;
-		top: 90px;
-		left: -12px;
+		top: 102px;
+		left: 8px;
 		letter-spacing: -2px;
 		&:after {
 			content: "TM";
@@ -164,8 +153,8 @@
 		.rounded(7px);
 		position:absolute;
 		background: @mediumGrey;
-		top: 101px;
-		left: 59px;
+		top: 113px;
+		left: 79px;
 		display: block;
 		z-index: 2;
 		border: 1px solid white;
