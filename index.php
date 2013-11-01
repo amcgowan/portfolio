@@ -85,23 +85,47 @@
 	   <div class="container">
 	   		<h2>Recent Work</h2>
 	   		<div class="col-sm-6 col-md-3">
-	   			<div style="background: red; width: 100%; height: 40px;">
-	   			
+	   			<div class="thumbnail">
+	   				<img src="images/rubrix.jpg" width="300" height="200">
+	   				<div class="caption">
+	   					<h3>Rubrix</h3>
+	   					<p>Rubrix is a customizable evaluation tool by Discovery Software. My work focussed on UI design and development. </p>
+	   				</div>
+	   				
+	   				
 	   			</div>
 	   		</div>
 	   		<div class="col-sm-6 col-md-3">
-	   			<div style="background: red; width: 100%; height: 40px;">
-	   			
+	   			<div class="thumbnail">
+	   				<img src="images/poster.jpg" width="300" height="200">
+	   				<div class="caption">
+	   					<h3>Design Contest</h3>
+	   					<p>A finalist submission for a workplace poster design contest. This was produced purely with HTML and CSS.   </p>
+	   				</div>
+	   				
+	   				
 	   			</div>
 	   		</div>
 	   		<div class="col-sm-6 col-md-3">
-	   			<div style="background: red; width: 100%; height: 40px;">
-	   			
+	   			<div class="thumbnail">
+	   				<img src="images/katehughes.jpg" width="300" height="200">
+	   				<div class="caption">
+	   					<h3>Kate Hughes Design</h3>
+	   					<p>A single page website full of precisely timed animations. Animation sequencing is handled using jQuery.</p>
+	   				</div>
+	   				
+	   				
 	   			</div>
 	   		</div>
 	   		<div class="col-sm-6 col-md-3">
-	   			<div style="background: red; width: 100%; height: 40px;">
-	   			
+	   			<div class="thumbnail">
+	   				<img src="images/woodysed.jpg" width="300" height="200">
+	   				<div class="caption">
+	   					<h3>Woody Sed</h3>
+	   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
+	   				</div>
+	   				
+	   				
 	   			</div>
 	   		</div>
 	   </div>
@@ -148,10 +172,10 @@
 			   </div>
 			   <div class="col-md-6 col-sm-3 hidden-xs">
 			   		<div class="techno-logos">
-			   		<object type="image/svg+xml" data="svg/wordpress.svg" class="drupal logo"></object>
-			   		<object type="image/svg+xml" data="svg/magento.svg" class="magento logo"></object>
-			   		<object type="image/svg+xml" data="svg/drupal.svg" class="drupal logo"></object>
-			   		<object type="image/svg+xml" data="svg/cakephp.svg" class="cakephp logo"></object>
+			   			<object type="image/svg+xml" data="svg/wordpress.svg" class="drupal logo"></object>
+			   			<object type="image/svg+xml" data="svg/magento.svg" class="magento logo"></object>
+			   			<object type="image/svg+xml" data="svg/drupal.svg" class="drupal logo"></object>
+			   			<object type="image/svg+xml" data="svg/cakephp.svg" class="cakephp logo"></object>
 			   		</div>
 			   </div>
 		</article>
