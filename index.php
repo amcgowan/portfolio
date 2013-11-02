@@ -84,56 +84,85 @@
     <section id="recent-work">  
 	   <div class="container">
 	   		<h2>Recent Work</h2>
-	   		<div class="col-sm-6 col-md-3">
-	   			<div class="thumbnail">
-	   				<img src="images/rubrix.jpg" width="300" height="200">
-	   				<div class="caption">
-	   					<h3>Rubrix</h3>
-	   					<p>Rubrix is a customizable evaluation tool by Discovery Software. My work focussed on UI design and development. </p>
+	   		<article class="row slide-right rubrix">
+	   			<div class="col-md-4">
+	   				<div class="thumbnail">
+	   					<img src="images/placeholder.jpg" width="400" height="300">
 	   				</div>
-	   				
-	   				
 	   			</div>
-	   		</div>
-	   		<div class="col-sm-6 col-md-3">
-	   			<div class="thumbnail">
-	   				<img src="images/poster.jpg" width="300" height="200">
-	   				<div class="caption">
-	   					<h3>Design Contest</h3>
-	   					<p>A finalist submission for a workplace poster design contest. This was produced purely with HTML and CSS.   </p>
-	   				</div>
-	   				
-	   				
+	   			<div class="col-md-8">
+		   			<p><a class="slide-back btn btn-default">Back</a></p>
 	   			</div>
-	   		</div>
-	   		<div class="col-sm-6 col-md-3">
-	   			<div class="thumbnail">
-	   				<img src="images/katehughes.jpg" width="300" height="200">
-	   				<div class="caption">
-	   					<h3>Kate Hughes Design</h3>
-	   					<p>A single page website full of precisely timed animations. Animation sequencing is handled using jQuery.</p>
-	   				</div>
-	   				
-	   				
+	   		</article>
+	   		<article class="row slide-right poster">
+		   		<p><a class="slide-back btn btn-default">Back</a></p>
+	   		</article>
+	   		<article class="row slide-right hughes">
+		   		<p><a class="slide-back btn btn-default">Back</a></p>
+	   		</article>
+	   		<article class="row slide-right woody">
+	   			<div class="col-md-12">
+	   				<p><a class="slide-back btn btn-default">Back</a></p>
 	   			</div>
-	   		</div>
-	   		<div class="col-sm-6 col-md-3">
-	   			<div class="thumbnail">
-	   				<img src="images/woodysed.jpg" width="300" height="200">
-	   				<div class="caption">
-	   					<h3>Woody Sed</h3>
-	   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
-	   				</div>
-	   				
-	   				
-	   			</div>
-	   		</div>
+	   		</article>
+	   		
+	   		<article class="row">
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/rubrix.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Rubrix</h3>
+		   					<p>Rubrix is a customizable evaluation tool by Discovery Software. My work focussed on UI design and development. </p>
+		   					<p><a data-target="rubrix" class="slide btn btn-default">More info</a></p>
+		   				</div>
+		   				
+		   				
+		   			</div>
+		   		</div>
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/poster.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Design Contest</h3>
+		   					<p>A finalist submission for a workplace poster design contest. This was produced purely with HTML and CSS.   </p>
+		   					<p><a data-target="poster" class="slide btn btn-default">More info</a></p>
+		   				</div>
+		   				
+		   				
+		   			</div>
+		   		</div>
+		   		<div class="clearfix visible-sm"></div>
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/katehughes.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Kate Hughes Design</h3>
+		   					<p>A single page website full of precisely timed animations. Animation sequencing is handled using jQuery.</p>
+		   					<p><a data-target="hughes" class="slide btn btn-default">More info</a></p>
+		   				</div>
+		   				
+		   				
+		   			</div>
+		   		</div>
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/woodysed.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Woody Sed</h3>
+		   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
+		   					<p><a data-target="woody" class="slide btn btn-default">More info</a></p>
+		   				</div>
+		   				
+		   				
+		   			</div>
+		   		</div>
+	   		</article>
 	   </div>
    </section>
    <section id="work-experience">
 	   	<div class="container">
 		   <h2>Work Experience</h2>
-		   <article>
+		   <article class="row">
 			   <div class="logo col-md-6 col-sm-3 hidden-xs">
 			   		<div class="rubrix-logo">
 			   			<div class="square">
@@ -157,7 +186,7 @@
 			   		</a>
 			   </div>
 		   </article>
-		   <article>
+		   <article class="row">
 			   <div class="col-md-6 col-sm-9">
 				   <h3>
 				   		Web developer - eVision Media
@@ -183,9 +212,11 @@
    <section id="about">
    	<div class="container">
    		<h2>About Me</h2>
-   		<div class="col-md-12">
-   			<p>I have been working as a professional web developer with 3+ years of experience. I obtained my Bachelor's of Computer Information Systems in 2010. My studies did not strictly focus on web development, they focused on principles of software development and programming. This has given me a solid foundation to work with in the world of web development which forces you to dive into more than five different programming languages on a daily basis, and keep up with new technology and frameworks.</p>
-   		</div>
+   		<article class="row">
+	   		<div class="col-md-12">
+	   			<p>I have been working as a professional web developer with 3+ years of experience. I obtained my Bachelor's of Computer Information Systems in 2010. My studies did not strictly focus on web development, they focused on principles of software development and programming. This has given me a solid foundation to work with in the world of web development which forces you to dive into more than five different programming languages on a daily basis, and keep up with new technology and frameworks.</p>
+	   		</div>
+   		</article>
    	</div>
    </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -194,7 +225,23 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
     	$(document).ready(function(e) {
-	    	$('.carousel').carousel();
+	    	$('.btn.slide').click(function() {
+		    	var btn = $(this);
+		    	btn.closest('.row')
+		    		.addClass('slide-left')
+		    		.parent()
+		    		.find('.' + btn.attr('data-target'))
+		    		.removeClass('slide-right');
+		    	
+	    	});
+	    	$('.btn.slide-back').click(function() {
+		    	var btn = $(this);
+		    	btn.closest('.row')
+		    		.addClass('slide-right')
+		    		.parent()
+		    		.find('.slide-left')
+		    		.removeClass('slide-left');
+	    	});
     	});
     </script>
   </body>
