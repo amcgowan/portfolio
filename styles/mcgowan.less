@@ -72,6 +72,9 @@
 		background: @darkGrey;
 	}
 }*/
+body {
+	overflow-x: hidden;
+}
 // Techno logos 
 .techno-logos {
 	width: 160px;
@@ -219,4 +222,42 @@
 }
 .thumbnail {
 	margin-bottom: 30px;
+}
+
+#recent-work {
+	background: silver;
+}
+article.row {
+	@duration: 0.5s;
+	position: relative;
+	.transitionMultiple(@duration ease-in max-height @duration * 2.2,
+						0 ease-out width @duration,
+						@duration ease-out opacity @duration * 3,
+						@duration ease-out left @duration * 3;);
+	max-height: 1700px;
+	width: 100%;
+	overflow: hidden;
+	> div {
+		float: left;
+	}
+	&.slide-left {
+		left: -100%;
+		opacity: 0;
+		max-height: 0px;
+		//width: 0px;
+		.transitionMultiple(@duration ease-in opacity 0s,
+							@duration ease-in left 0s, 
+							@duration ease-out max-height @duration,
+							0s ease-in width @duration;);
+	}
+	&.slide-right {
+		left: 100%;
+		opacity: 0;
+		max-height: 0px;
+		//width: 0px;
+		.transitionMultiple(@duration ease-in opacity 0s,
+							@duration ease-in left 0s, 
+							@duration ease-out max-height @duration,
+							0s ease-in width @duration;);
+	}
 }
