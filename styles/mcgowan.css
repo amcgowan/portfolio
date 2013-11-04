@@ -234,12 +234,12 @@ body {
   background: silver;
 }
 #recent-work div.container {
+  min-height: 1763px;
+  max-height: 1763px;
   -webkit-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
   -moz-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
   -o-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
   transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
-  min-height: 1763px;
-  max-height: 1763px;
 }
 @media only screen and (min-width: 768px) {
   #recent-work div.container {
@@ -260,12 +260,12 @@ body {
   }
 }
 #recent-work div.container.slide {
+  min-height: 0px;
+  max-height: 2000px;
   -webkit-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
   -moz-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
   -o-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
   transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
-  min-height: 0px;
-  max-height: 2000px;
 }
 article.row {
   position: relative;

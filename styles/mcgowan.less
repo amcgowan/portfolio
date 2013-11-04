@@ -228,16 +228,26 @@ body {
 #recent-work {
 	background: silver;
 	div.container {
+		min-height: 1763px; max-height: 1763px;
+
 		.transitionMultiple(@duration ease-in-out min-height 0s,
 							@duration ease-in-out max-height 0s;);
-		min-height: 1763px; max-height: 1763px;
-		@media only screen and (min-width : 768px) { min-height: 919px; max-height: 919px; }
-		@media only screen and (min-width : 992px) { min-height: 467px; max-height: 467px; }
-		@media only screen and (min-width : 1200px) { min-height: 474px; max-height: 474px; }
+
+		@media only screen and (min-width : 768px) { 
+			min-height: 919px; max-height: 919px; 
+		}
+		@media only screen and (min-width : 992px) { 
+			min-height: 467px; max-height: 467px; 
+		}
+		@media only screen and (min-width : 1200px) { 
+			min-height: 474px; max-height: 474px; 
+		}
+
 		&.slide {
-			.transitionMultiple(@duration ease-in-out min-height @duration,
-							    @duration ease-in-out max-height @duration;);
 			min-height: 0px; max-height: 2000px;
+			.transitionMultiple(
+				@duration ease-in-out min-height @duration,
+				@duration ease-in-out max-height @duration;);
 		}
 	}
 }
