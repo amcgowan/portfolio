@@ -51,37 +51,39 @@
 	  	</div>
   	</div>
   	<div class="container technologies">
-  		<div class="col-md-3 col-sm-6">
-  			<div class="displays">
-  				<div  class="center">
-  					<i class="fa fa-desktop desktop"></i>
-  					<i class="fa fa-laptop laptop"></i>
-  					<i class="fa fa-mobile-phone mobile-phone"></i>
-  				</div>
-  			</div>
-  			<h2>Less/CSS</h2>
-  			<p>Uses Less to create clean and efficient style sheets that let your site display beautifully on any size device</p>
-  		</div>
-  		<div class="col-md-3 col-sm-6">
-  			<i class="fa fa-code"></i>
-  			<h2>HTML</h2>
-  			<p>Your site will be developed with HTML5 to allow for a tidy site structure and rich user experience.</p>
-  		</div>
-  		
-  		<div class="clearfix visible-sm"></div>
-  		
-  		<div class="col-md-3 col-sm-6">
-  			<i class="fa fa-rocket"></i>
-  			<h2>JavaScript</h2>
-  			<p>JavaScript in conjunction with jQuery will provide wonderful functionality to your site.</p>
-  		</div>
-  		<div class="col-md-3 col-sm-6">
-  			<i class="fa fa-cogs"></i>
-  			<h2>PHP/SQL</h2>
-  			<p>Not only will your site look good, but it can connect to a database do blah blh blha</p>
-  		</div>
+  		<article class="row">
+	  		<div class="col-md-3 col-sm-6">
+	  			<div class="displays">
+	  				<div  class="center">
+	  					<i class="fa fa-desktop desktop"></i>
+	  					<i class="fa fa-laptop laptop"></i>
+	  					<i class="fa fa-mobile-phone mobile-phone"></i>
+	  				</div>
+	  			</div>
+	  			<h2>Less/CSS</h2>
+	  			<p>Uses Less to create clean and efficient style sheets that let your site display beautifully on any size device</p>
+	  		</div>
+	  		<div class="col-md-3 col-sm-6">
+	  			<i class="fa fa-code"></i>
+	  			<h2>HTML</h2>
+	  			<p>Your site will be developed with HTML5 to allow for a tidy site structure and rich user experience.</p>
+	  		</div>
+	  		
+	  		<div class="clearfix visible-sm"></div>
+	  		
+	  		<div class="col-md-3 col-sm-6">
+	  			<i class="fa fa-rocket"></i>
+	  			<h2>JavaScript</h2>
+	  			<p>JavaScript in conjunction with jQuery will provide wonderful functionality to your site.</p>
+	  		</div>
+	  		<div class="col-md-3 col-sm-6">
+	  			<i class="fa fa-cogs"></i>
+	  			<h2>PHP/SQL</h2>
+	  			<p>Not only will your site look good, but it can connect to a database do blah blh blha</p>
+	  		</div>
+  		</article>
   	</div>
-    <section id="recent-work">  
+    <section id="recent-work" class="slider">  
 	   <div class="container">
 	   		<h2>Recent Work</h2>
 	   		<article class="row slide-right rubrix">
@@ -95,12 +97,12 @@
 	   			</div>
 	   		</article>
 	   		<article class="row slide-right poster">
-	   			<div class="hidden-xs col-sm-6 col-md-4">
+	   			<div class="hidden-xs col-sm-6 col-md-3">
 	   				<div class="thumbnail">
 	   					<img src="images/poster-full.jpg" width="400" height="587">
 	   				</div>
 	   			</div>
-	   			<div class="col-xs-12 col-sm-6 col-md-8">
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				<h3>Poster Design Contest</h3>
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
@@ -111,9 +113,33 @@
 	   				<p>The only constraint was that each poster had to have something to do with what we do at Discovery Software. Since we produce a lot of code, I choose the route of a motivational poster to help inspire excellent code.</p>
 	   				<p>An additional challenge was proposed to the web development team to produce the poster using only HTML and CSS. This poster does just that using only HTML and CSS combined with Font Awesome.</p>
 	   				<p>
+
+	   				
 	   				<p><a class="slide-back btn btn-default">Back</a></p>
 	   			</div>
-		   		
+				<div class="col-sm-6 col-md-3">
+					<div data-value="50" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas></canvas>
+	   					<div>
+	   						<i class="fa fa-flask"></i>
+	   						<p>DESIGN</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="35" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas></canvas>
+	   					<div>
+	   						<i class="fa fa-css3"></i>
+	   						<p>CSS3</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="15" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas></canvas>
+	   					<div>
+	   						<i class="fa fa-html5"></i>
+	   						<p>HTML5</p>
+	   					</div>
+	   				</div>
+				</div>		   		
 	   		</article>
 	   		<article class="row slide-right hughes">
 		   		<p><a class="slide-back btn btn-default">Back</a></p>
@@ -242,6 +268,26 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    	function runCharts(charts) {
+	    	charts.each(function(i,o) {
+		    	var chart = $(o),
+		    		options = {
+			    		segmentStrokeWidth: 0	
+		    		},
+		    		data = [
+		    			{
+		    				value: 100 - chart.attr('data-value'),
+		    				color: "silver"
+		    			},
+		    			{
+			    			value: chart.attr('data-value'),
+			    			color: red;			    			
+		    			}
+		    		],
+		    		ctx = chart.find('canvas').get(0).getContext('2d'),
+		    		chart = new Chart(ctx).Doughnut(data,options);
+	    	});
+    	}
     	$(document).ready(function(e) {
 	    	$('.btn.slide').click(function() {
 		    	var btn = $(this);
@@ -251,7 +297,9 @@
 		    		.addClass('slide')
 		    		.find('.' + btn.attr('data-target'))
 		    		.removeClass('slide-right');
-		    	
+		    	setTimeout(function() {
+		    		runCharts(btn.cloest('.container').find('.' + btn.attr('data-target') + ' .chart');
+		    	}, 1000)
 	    	});
 	    	$('.btn.slide-back').click(function() {
 		    	var btn = $(this);
