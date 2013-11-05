@@ -89,14 +89,69 @@
 		   		
 	   		</h2>
 	   		<article class="row slide-right rubrix">
-	   			<div class="col-md-4">
+	   			<div class="hidden-xs col-sm-6 col-md-3">
 	   				<div class="thumbnail">
-	   					<img src="images/placeholder.jpg" width="400" height="300">
+	   					<img src="images/rubrix-1.jpg" width="400" height="587">
+	   				</div>
+	   				<div class="thumbnail">
+	   					<img src="images/rubrix-2.jpg" width="400" height="587">
+	   				</div>
+	   				<div class="thumbnail">
+	   					<img src="images/rubrix-3.jpg" width="400" height="587">
 	   				</div>
 	   			</div>
-	   			<div class="col-md-8">
-		   			<p><a class="slide-back btn btn-default">Back</a></p>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Rubrix
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+	   						<img src="images/rubrix-1.jpg" width="400" height="587">
+		   				</div>
+		   				<div class="thumbnail">
+		   					<img src="images/rubrix-2.jpg" width="400" height="587">
+		   				</div>
+		   				<div class="thumbnail">
+		   					<img src="images/rubrix-3.jpg" width="400" height="587">
+		   				</div>
+	   				</div>
+	   				<p>Rubrix is a robust and flexible platform that lets you evaluate virtually anything. By creating your own custom Rubrics for a specific subject you can use them to evaluate your boss, your students, or even the beer you are drinking.</p>
+	   				<p>When I first began work at Discovery Software I was fairly inexperienced and had a lot of new tools to learn. However, since I have a strong background in Computer Information Systems, and a desire to learn, I quickly learned the tools and improved all of my skills. After a few months, I had learned to work with Git, LESS, and improved my abilities with JavaScript and CSS. Soon I was designing new user interfaces that interacted with a RESTful API, and pitching new ideas to help improve the application.</p>
+	   				<p>My most recent work on Rubrix involved updating the chrome and incorporating bootstrap across the entire application. This involved updating 100+ files in which code was cleaned up, and the interface was redesigned where necessary.  The screenshots here display the new Rubrix chrome that will be released in the near future</p>
+	   				<p>
 	   			</div>
+				<div class="col-sm-6 col-md-3">
+					<div data-value="20" class="chart breakdown text-center col-sm-6 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-flask"></i>
+	   						<p>DESIGN</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="35" class="chart breakdown text-center col-sm-6 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-css3"></i>
+	   						<p>CSS3</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="30" class="chart breakdown text-center col-sm-6 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-rocket"></i>
+	   						<p>JS</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="20" class="chart breakdown text-center col-sm-6 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-cogs"></i>
+	   						<p class="php">PHP/SQL</p>
+	   					</div>
+	   				</div>
+				</div>		   		
 	   		</article>
 	   		<article class="row slide-right poster">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
