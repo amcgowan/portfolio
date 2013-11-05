@@ -226,9 +226,10 @@ body {
 			display: block;
 		}
 		.thumbnail {
+			position: relative;
 			.transitionMultiple(none);
 			@media only screen and (min-width: 992px) {
-				height: 360px;
+				height: 340px;
 			}
 			margin-bottom: 30px;
 		}
@@ -243,8 +244,19 @@ body {
 			padding-left: 0px;
 		}
 		.breakdown {
+			margin-top: 8px;
+			margin-bottom: 24px;
 			@media only screen and (max-width: 768px) {
 				display: none;
+			}
+			canvas {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 0px;
+				left: 50%;
+				margin-left: -50px;
+				margin-top: -12px;
 			}
 			div {
 				position: relative;
@@ -266,6 +278,23 @@ body {
 				}
 			}
 		}
+		.slide-back {
+			color: @lighterGrey;
+			.transition(.2s);
+			&:hover {
+				cursor: pointer;
+				color: @black;
+			}
+		}
+		.caption.more {
+			text-align: right;
+			@media only screen and (min-width: 992px) {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+			}
+		}
+
 	}
 }
 

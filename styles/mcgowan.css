@@ -231,6 +231,7 @@ body {
   display: block;
 }
 .slider .slider-nav .thumbnail {
+  position: relative;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -239,7 +240,7 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .slider .slider-nav .thumbnail {
-    height: 360px;
+    height: 340px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -250,10 +251,23 @@ body {
 .slider article.row div.visible-xs.pull-left {
   padding-left: 0px;
 }
+.slider article.row .breakdown {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
 @media only screen and (max-width: 768px) {
   .slider article.row .breakdown {
     display: none;
   }
+}
+.slider article.row .breakdown canvas {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -12px;
 }
 .slider article.row .breakdown div {
   position: relative;
@@ -275,6 +289,27 @@ body {
   font-size: 14px;
   color: silver;
   margin-top: -5px;
+}
+.slider article.row .slide-back {
+  color: #a6a6a9;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.slider article.row .slide-back:hover {
+  cursor: pointer;
+  color: #151613;
+}
+.slider article.row .caption.more {
+  text-align: right;
+}
+@media only screen and (min-width: 992px) {
+  .slider article.row .caption.more {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
 }
 #recent-work {
   background: silver;
