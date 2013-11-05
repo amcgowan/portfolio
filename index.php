@@ -95,7 +95,25 @@
 	   			</div>
 	   		</article>
 	   		<article class="row slide-right poster">
-		   		<p><a class="slide-back btn btn-default">Back</a></p>
+	   			<div class="hidden-xs col-sm-6 col-md-4">
+	   				<div class="thumbnail">
+	   					<img src="images/poster-full.jpg" width="400" height="587">
+	   				</div>
+	   			</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-8">
+	   				<h3>Poster Design Contest</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+		   					<img src="images/poster-full.jpg" width="400" height="587">
+		   				</div>
+	   				</div>
+	   				<p>This was a poster design contest held at Discovery Software. The idea was to encourage programmers and designers to think more about design and how to present information.<p>
+	   				<p>The only constraint was that each poster had to have something to do with what we do at Discovery Software. Since we produce a lot of code, I choose the route of a motivational poster to help inspire excellent code.</p>
+	   				<p>An additional challenge was proposed to the web development team to produce the poster using only HTML and CSS. This poster does just that using only HTML and CSS combined with Font Awesome.</p>
+	   				<p>
+	   				<p><a class="slide-back btn btn-default">Back</a></p>
+	   			</div>
+		   		
 	   		</article>
 	   		<article class="row slide-right hughes">
 		   		<p><a class="slide-back btn btn-default">Back</a></p>
@@ -106,7 +124,7 @@
 	   			</div>
 	   		</article>
 	   		
-	   		<article class="row">
+	   		<article class="slider-nav row">
 		   		<div class="col-sm-6 col-md-3">
 		   			<div class="thumbnail">
 		   				<img src="images/rubrix.jpg" width="300" height="200">
@@ -230,6 +248,7 @@
 		    	btn.closest('.row')
 		    		.addClass('slide-left')
 		    		.parent()
+		    		.addClass('slide')
 		    		.find('.' + btn.attr('data-target'))
 		    		.removeClass('slide-right');
 		    	
@@ -239,6 +258,7 @@
 		    	btn.closest('.row')
 		    		.addClass('slide-right')
 		    		.parent()
+		    		.removeClass('slide')
 		    		.find('.slide-left')
 		    		.removeClass('slide-left');
 	    	});
