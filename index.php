@@ -85,7 +85,9 @@
   	</div>
     <section id="recent-work" class="slider">  
 	   <div class="container">
-	   		<h2>Recent Work</h2>
+	   		<h2>Recent Work
+		   		
+	   		</h2>
 	   		<article class="row slide-right rubrix">
 	   			<div class="col-md-4">
 	   				<div class="thumbnail">
@@ -103,7 +105,11 @@
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
-	   				<h3>Poster Design Contest</h3>
+	   				<h3>Poster Design Contest
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
 		   					<img src="images/poster-full.jpg" width="400" height="587">
@@ -113,27 +119,24 @@
 	   				<p>The only constraint was that each poster had to have something to do with what we do at Discovery Software. Since we produce a lot of code, I choose the route of a motivational poster to help inspire excellent code.</p>
 	   				<p>An additional challenge was proposed to the web development team to produce the poster using only HTML and CSS. This poster does just that using only HTML and CSS combined with Font Awesome.</p>
 	   				<p>
-
-	   				
-	   				<p><a class="slide-back btn btn-default">Back</a></p>
 	   			</div>
 				<div class="col-sm-6 col-md-3">
 					<div data-value="50" class="chart breakdown text-center col-sm-4 col-md-12">
-	   					<canvas></canvas>
+	   					<canvas width="100" height="100"></canvas>
 	   					<div>
 	   						<i class="fa fa-flask"></i>
 	   						<p>DESIGN</p>
 	   					</div>
 	   				</div>
 	   				<div data-value="35" class="chart breakdown text-center col-sm-4 col-md-12">
-	   					<canvas></canvas>
+	   					<canvas width="100" height="100"></canvas>
 	   					<div>
 	   						<i class="fa fa-css3"></i>
 	   						<p>CSS3</p>
 	   					</div>
 	   				</div>
 	   				<div data-value="15" class="chart breakdown text-center col-sm-4 col-md-12">
-	   					<canvas></canvas>
+	   					<canvas width="100" height="100"></canvas>
 	   					<div>
 	   						<i class="fa fa-html5"></i>
 	   						<p>HTML5</p>
@@ -157,7 +160,9 @@
 		   				<div class="caption">
 		   					<h3>Rubrix</h3>
 		   					<p>Rubrix is a customizable evaluation tool by Discovery Software. My work focussed on UI design and development. </p>
-		   					<p><a data-target="rubrix" class="slide btn btn-default">More info</a></p>
+		   				</div>
+		   				<div class="caption more">
+		   					<a data-target="rubrix" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   				
@@ -169,9 +174,11 @@
 		   				<div class="caption">
 		   					<h3>Design Contest</h3>
 		   					<p>A finalist submission for a workplace poster design contest. This was produced purely with HTML and CSS.   </p>
-		   					<p><a data-target="poster" class="slide btn btn-default">More info</a></p>
+		   					
 		   				</div>
-		   				
+		   				<div class="caption more">
+		   					<a data-target="poster" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
 		   				
 		   			</div>
 		   		</div>
@@ -182,10 +189,10 @@
 		   				<div class="caption">
 		   					<h3>Kate Hughes Design</h3>
 		   					<p>A single page website full of precisely timed animations. Animation sequencing is handled using jQuery.</p>
-		   					<p><a data-target="hughes" class="slide btn btn-default">More info</a></p>
 		   				</div>
-		   				
-		   				
+		   				<div class="caption more">
+		   					<a data-target="hughes" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
 		   			</div>
 		   		</div>
 		   		<div class="col-sm-6 col-md-3">
@@ -194,9 +201,10 @@
 		   				<div class="caption">
 		   					<h3>Woody Sed</h3>
 		   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
-		   					<p><a data-target="woody" class="slide btn btn-default">More info</a></p>
 		   				</div>
-		   				
+		   				<div class="caption more">
+		   					<a data-target="woody" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
 		   				
 		   			</div>
 		   		</div>
@@ -265,6 +273,7 @@
    </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
+    <script src="/Chart.js/Chart.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -272,22 +281,29 @@
 	    	charts.each(function(i,o) {
 		    	var chart = $(o),
 		    		options = {
-			    		segmentStrokeWidth: 0	
+		    			segmentShowStroke: false,
+			    		percentageInnerCutout : 90,	
 		    		},
 		    		data = [
 		    			{
-		    				value: 100 - chart.attr('data-value'),
-		    				color: "silver"
+			    			value: parseInt(chart.attr('data-value'), 10),
+			    			color: "red"	    			
 		    			},
 		    			{
-			    			value: chart.attr('data-value'),
-			    			color: red;			    			
+		    				value: 100 - parseInt(chart.attr('data-value'), 10),
+		    				color: "silver"
 		    			}
+
 		    		],
-		    		ctx = chart.find('canvas').get(0).getContext('2d'),
-		    		chart = new Chart(ctx).Doughnut(data,options);
+		    		canvas = chart.find('canvas'),
+		    		ctx = canvas.get(0).getContext('2d');
+		    		ctx.clearRect(0, 0, canvas.width(), canvas.height());
+		    		setTimeout(function() {
+		    			new Chart(ctx).Doughnut(data,options);
+		    		}, 1500);
 	    	});
     	}
+
     	$(document).ready(function(e) {
 	    	$('.btn.slide').click(function() {
 		    	var btn = $(this);
@@ -297,18 +313,21 @@
 		    		.addClass('slide')
 		    		.find('.' + btn.attr('data-target'))
 		    		.removeClass('slide-right');
-		    	setTimeout(function() {
-		    		runCharts(btn.cloest('.container').find('.' + btn.attr('data-target') + ' .chart');
-		    	}, 1000)
+		    	runCharts(btn.closest('.container').find('.' + btn.attr('data-target') + ' .chart'));
+
 	    	});
-	    	$('.btn.slide-back').click(function() {
+	    	$('a.slide-back').click(function() {
 		    	var btn = $(this);
+		    	btn.tooltip('hide');
 		    	btn.closest('.row')
 		    		.addClass('slide-right')
 		    		.parent()
 		    		.removeClass('slide')
 		    		.find('.slide-left')
 		    		.removeClass('slide-left');
+	    	});
+	    	$('.hint').tooltip({
+		    	container: 'body'
 	    	});
     	});
     </script>
