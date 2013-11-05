@@ -227,8 +227,54 @@ body {
   height: 400px;
   background: #494c43;
 }
-.slider-nav .thumbnail {
+.slider .slider-nav > div {
+  display: block;
+}
+.slider .slider-nav .thumbnail {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .slider .slider-nav .thumbnail {
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .slider article.row h3 {
+    margin-top: 0px;
+  }
+}
+.slider article.row div.visible-xs.pull-left {
+  padding-left: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .slider article.row .breakdown {
+    display: none;
+  }
+}
+.slider article.row .breakdown div {
+  position: relative;
+  left: 50%;
+  margin-left: -38px;
+  width: 76px;
+  height: 76px;
+  background: #a6a6a9;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.slider article.row .breakdown div i {
+  margin-top: 12px;
+  font-size: 2.9em;
+  color: silver;
+}
+.slider article.row .breakdown div p {
+  font-size: 14px;
+  color: silver;
+  margin-top: -5px;
 }
 #recent-work {
   background: silver;
