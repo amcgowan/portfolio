@@ -198,17 +198,17 @@ body {
 .technologies .displays i {
   position: absolute;
 }
-.technologies .displays i.icon-desktop {
+.technologies .displays i.desktop {
   font-size: 36px;
   left: 3px;
   top: 0px;
 }
-.technologies .displays i.icon-mobile-phone {
+.technologies .displays i.mobile-phone {
   font-size: 38px;
   left: 27px;
   top: 5px;
 }
-.technologies .displays i.icon-mobile-phone:after {
+.technologies .displays i.mobile-phone:after {
   content: " ";
   display: block;
   background: white;
@@ -218,7 +218,7 @@ body {
   left: 2px;
   position: absolute;
 }
-.technologies .displays i.icon-laptop {
+.technologies .displays i.laptop {
   left: 35px;
   top: 1px;
   font-size: 40px;

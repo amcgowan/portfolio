@@ -6,7 +6,7 @@
     <!-- Bootstrap -->
     <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="styles/mcgowan.css" rel="stylesheet" media="screen">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,16 +54,16 @@
   		<div class="col-md-3 col-sm-6">
   			<div class="displays">
   				<div  class="center">
-  					<i class="icon-desktop"></i>
-  					<i class="icon-laptop"></i>
-  					<i class="icon-mobile-phone"></i>
+  					<i class="fa fa-desktop desktop"></i>
+  					<i class="fa fa-laptop laptop"></i>
+  					<i class="fa fa-mobile-phone mobile-phone"></i>
   				</div>
   			</div>
   			<h2>Less/CSS</h2>
   			<p>Uses Less to create clean and efficient style sheets that let your site display beautifully on any size device</p>
   		</div>
   		<div class="col-md-3 col-sm-6">
-  			<i class="icon-code"></i>
+  			<i class="fa fa-code"></i>
   			<h2>HTML</h2>
   			<p>Your site will be developed with HTML5 to allow for a tidy site structure and rich user experience.</p>
   		</div>
@@ -71,12 +71,12 @@
   		<div class="clearfix visible-sm"></div>
   		
   		<div class="col-md-3 col-sm-6">
-  			<i class="icon-rocket"></i>
+  			<i class="fa fa-rocket"></i>
   			<h2>JavaScript</h2>
   			<p>JavaScript in conjunction with jQuery will provide wonderful functionality to your site.</p>
   		</div>
   		<div class="col-md-3 col-sm-6">
-  			<i class="icon-cogs"></i>
+  			<i class="fa fa-cogs"></i>
   			<h2>PHP/SQL</h2>
   			<p>Not only will your site look good, but it can connect to a database do blah blh blha</p>
   		</div>
