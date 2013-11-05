@@ -282,13 +282,17 @@ body {
 }
 .slider article.row .breakdown div i {
   margin-top: 12px;
-  font-size: 2.9em;
+  font-size: 2.8em;
   color: silver;
 }
 .slider article.row .breakdown div p {
   font-size: 14px;
   color: silver;
   margin-top: -5px;
+}
+.slider article.row .breakdown div p.php {
+  margin-top: -2px;
+  font-size: 12px;
 }
 .slider article.row .slide-back {
   color: #a6a6a9;
@@ -310,6 +314,9 @@ body {
     bottom: 0px;
     right: 0px;
   }
+}
+.slider article.row.rubrix > div .thumbnail {
+  margin-bottom: 10px;
 }
 #recent-work {
   background: silver;
