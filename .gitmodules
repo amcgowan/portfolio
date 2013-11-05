@@ -7,3 +7,6 @@
 [submodule "elements"]
 	path = elements
 	url = git@github.com:amcgowan/elements.git
+[submodule "chartjs"]
+	path = chartjs
+	url = git@github.com:nnnick/Chart.js.git
