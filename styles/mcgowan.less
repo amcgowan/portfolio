@@ -220,16 +220,17 @@ body {
 		background: @darkGrey;
 	}
 }
-.thumbnail {
+.slider-nav .thumbnail {
 	margin-bottom: 30px;
 }
+
 // Slider animations
 @duration: 0.5s;
 #recent-work {
 	background: silver;
 	div.container {
 		min-height: 1763px; max-height: 1763px;
-
+		padding-bottom: 30px;
 		.transitionMultiple(@duration ease-in-out min-height 0s,
 							@duration ease-in-out max-height 0s;);
 
@@ -252,16 +253,13 @@ body {
 	}
 }
 article.row {
-	
+	width: 100%; left: 0%; max-height: 1700px;
+	overflow: hidden;
 	position: relative;
 	.transitionMultiple(0s linear max-height @duration,
 						0s linear width @duration,
 						@duration ease-out opacity @duration * 2,
 						@duration ease-out left @duration * 2;);
-	width: 100%;
-	overflow: hidden;
-	left: 0%;
-	max-height: 1700px;
 	> div {
 		float: left;
 	}
@@ -269,7 +267,7 @@ article.row {
 		left: -100%;
 		opacity: 0;
 		max-height: 0px;
-		//width: 0px;
+		width: 0px;
 		.transitionMultiple(@duration ease-in opacity 0s,
 							@duration ease-in left 0s, 
 							0s linear max-height @duration,
@@ -279,7 +277,7 @@ article.row {
 		left: 100%;
 		opacity: 0;
 		max-height: 0px;
-		//width: 0px;
+		width: 0px;
 		.transitionMultiple(@duration ease-in opacity 0s,
 							@duration ease-in left 0s, 
 							0s linear max-height @duration,

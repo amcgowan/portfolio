@@ -227,7 +227,7 @@ body {
   height: 400px;
   background: #494c43;
 }
-.thumbnail {
+.slider-nav .thumbnail {
   margin-bottom: 30px;
 }
 #recent-work {
@@ -236,6 +236,7 @@ body {
 #recent-work div.container {
   min-height: 1763px;
   max-height: 1763px;
+  padding-bottom: 30px;
   -webkit-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
   -moz-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
   -o-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
@@ -268,15 +269,15 @@ body {
   transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
 }
 article.row {
+  width: 100%;
+  left: 0%;
+  max-height: 1700px;
+  overflow: hidden;
   position: relative;
   -webkit-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
   -moz-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
   -o-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
   transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
-  width: 100%;
-  overflow: hidden;
-  left: 0%;
-  max-height: 1700px;
 }
 article.row > div {
   float: left;
@@ -285,6 +286,7 @@ article.row.slide-left {
   left: -100%;
   opacity: 0;
   max-height: 0px;
+  width: 0px;
   -webkit-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
   -moz-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
   -o-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
@@ -294,6 +296,7 @@ article.row.slide-right {
   left: 100%;
   opacity: 0;
   max-height: 0px;
+  width: 0px;
   -webkit-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
   -moz-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
   -o-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
