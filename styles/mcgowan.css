@@ -243,6 +243,75 @@ body {
     height: 340px;
   }
 }
+.slider div.container {
+  min-height: 1763px;
+  max-height: 1763px;
+  padding-bottom: 30px;
+  -webkit-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
+  -moz-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
+  -o-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
+  transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
+}
+@media only screen and (min-width: 768px) {
+  .slider div.container {
+    min-height: 919px;
+    max-height: 919px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .slider div.container {
+    min-height: 467px;
+    max-height: 467px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .slider div.container {
+    min-height: 474px;
+    max-height: 474px;
+  }
+}
+.slider div.container.slide {
+  min-height: 0px;
+  max-height: 2000px;
+  -webkit-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
+  -moz-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
+  -o-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
+  transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
+}
+.slider article.row {
+  width: 100%;
+  left: 0%;
+  max-height: 1700px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
+  -moz-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
+  -o-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
+  transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
+}
+.slider article.row > div {
+  float: left;
+}
+.slider article.row.slide-left {
+  left: -100%;
+  opacity: 0;
+  max-height: 0px;
+  width: 0px;
+  -webkit-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+  -moz-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+  -o-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+  transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+}
+.slider article.row.slide-right {
+  left: 100%;
+  opacity: 0;
+  max-height: 0px;
+  width: 0px;
+  -webkit-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+  -moz-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+  -o-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+  transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+}
 @media only screen and (min-width: 768px) {
   .slider article.row h3 {
     margin-top: 0px;
@@ -315,78 +384,14 @@ body {
     right: 0px;
   }
 }
-.slider article.row.rubrix > div .thumbnail {
+.slider article.row.rubrix > div .thumbnail,
+.slider article.row.woody > div .thumbnail,
+.slider article.row.hughes > div .thumbnail {
   margin-bottom: 10px;
 }
-#recent-work {
+#web-development {
   background: silver;
 }
-#recent-work div.container {
-  min-height: 1763px;
-  max-height: 1763px;
-  padding-bottom: 30px;
-  -webkit-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
-  -moz-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
-  -o-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
-  transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
-}
-@media only screen and (min-width: 768px) {
-  #recent-work div.container {
-    min-height: 919px;
-    max-height: 919px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #recent-work div.container {
-    min-height: 467px;
-    max-height: 467px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #recent-work div.container {
-    min-height: 474px;
-    max-height: 474px;
-  }
-}
-#recent-work div.container.slide {
-  min-height: 0px;
-  max-height: 2000px;
-  -webkit-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
-  -moz-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
-  -o-transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
-  transition: 0.5s ease-in-out min-height 0.5s, 0.5s ease-in-out max-height 0.5s;
-}
-article.row {
-  width: 100%;
-  left: 0%;
-  max-height: 1700px;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
-  -moz-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
-  -o-transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
-  transition: 0s linear max-height 0.5s, 0s linear width 0.5s, 0.5s ease-out opacity 1s, 0.5s ease-out left 1s;
-}
-article.row > div {
-  float: left;
-}
-article.row.slide-left {
-  left: -100%;
-  opacity: 0;
-  max-height: 0px;
-  width: 0px;
-  -webkit-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-  -moz-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-  -o-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-  transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-}
-article.row.slide-right {
-  left: 100%;
-  opacity: 0;
-  max-height: 0px;
-  width: 0px;
-  -webkit-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-  -moz-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-  -o-transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
-  transition: 0.5s ease-in opacity 0s, 0.5s ease-in left 0s, 0s linear max-height 0.5s, 0s linear width 0.5s;
+#design {
+  background: #81859b;
 }

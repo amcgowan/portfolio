@@ -220,6 +220,8 @@ body {
 		background: @darkGrey;
 	}
 }
+// Slider container
+@duration: 0.5s;
 .slider {
 	.slider-nav {
 		> div {
@@ -234,7 +236,60 @@ body {
 			margin-bottom: 30px;
 		}
 	}
+	div.container {
+		min-height: 1763px; max-height: 1763px;
+		padding-bottom: 30px;
+		.transitionMultiple(@duration ease-in-out min-height 0s,
+							@duration ease-in-out max-height 0s;);
+
+		@media only screen and (min-width : 768px) { 
+			min-height: 919px; max-height: 919px; 
+		}
+		@media only screen and (min-width : 992px) { 
+			min-height: 467px; max-height: 467px; 
+		}
+		@media only screen and (min-width : 1200px) { 
+			min-height: 474px; max-height: 474px; 
+		}
+
+		&.slide {
+			min-height: 0px; max-height: 2000px;
+			.transitionMultiple(
+				@duration ease-in-out min-height @duration,
+				@duration ease-in-out max-height @duration;);
+		}
+	}
 	article.row {
+		width: 100%; left: 0%; max-height: 1700px;
+		overflow: hidden;
+		position: relative;
+		.transitionMultiple(0s linear max-height @duration,
+							0s linear width @duration,
+							@duration ease-out opacity @duration * 2,
+							@duration ease-out left @duration * 2;);
+		> div {
+			float: left;
+		}
+		&.slide-left {
+			left: -100%;
+			opacity: 0;
+			max-height: 0px;
+			width: 0px;
+			.transitionMultiple(@duration ease-in opacity 0s,
+								@duration ease-in left 0s, 
+								0s linear max-height @duration,
+								0s linear width @duration;);
+		}
+		&.slide-right {
+			left: 100%;
+			opacity: 0;
+			max-height: 0px;
+			width: 0px;
+			.transitionMultiple(@duration ease-in opacity 0s,
+								@duration ease-in left 0s, 
+								0s linear max-height @duration,
+								0s linear width @duration;);
+		}
 		h3 {
 			@media only screen and (min-width : 768px) {
 				margin-top: 0px;
@@ -298,71 +353,16 @@ body {
 				right: 0px;
 			}
 		}
-		&.rubrix {
+		&.rubrix, &.woody, &.hughes {
 			> div .thumbnail {
 				margin-bottom: 10px;
 			}
 		}
 	}
 }
-
-// Slider animations
-@duration: 0.5s;
-#recent-work {
+#web-development {
 	background: silver;
-	div.container {
-		min-height: 1763px; max-height: 1763px;
-		padding-bottom: 30px;
-		.transitionMultiple(@duration ease-in-out min-height 0s,
-							@duration ease-in-out max-height 0s;);
-
-		@media only screen and (min-width : 768px) { 
-			min-height: 919px; max-height: 919px; 
-		}
-		@media only screen and (min-width : 992px) { 
-			min-height: 467px; max-height: 467px; 
-		}
-		@media only screen and (min-width : 1200px) { 
-			min-height: 474px; max-height: 474px; 
-		}
-
-		&.slide {
-			min-height: 0px; max-height: 2000px;
-			.transitionMultiple(
-				@duration ease-in-out min-height @duration,
-				@duration ease-in-out max-height @duration;);
-		}
-	}
 }
-article.row {
-	width: 100%; left: 0%; max-height: 1700px;
-	overflow: hidden;
-	position: relative;
-	.transitionMultiple(0s linear max-height @duration,
-						0s linear width @duration,
-						@duration ease-out opacity @duration * 2,
-						@duration ease-out left @duration * 2;);
-	> div {
-		float: left;
-	}
-	&.slide-left {
-		left: -100%;
-		opacity: 0;
-		max-height: 0px;
-		width: 0px;
-		.transitionMultiple(@duration ease-in opacity 0s,
-							@duration ease-in left 0s, 
-							0s linear max-height @duration,
-							0s linear width @duration;);
-	}
-	&.slide-right {
-		left: 100%;
-		opacity: 0;
-		max-height: 0px;
-		width: 0px;
-		.transitionMultiple(@duration ease-in opacity 0s,
-							@duration ease-in left 0s, 
-							0s linear max-height @duration,
-							0s linear width @duration;);
-	}
+#design {
+	background: #81859b;
 }
