@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Andrew C. McGowan | Web Developer Portfolio</title>
+    <meta name="author" content="Andrew McGowan">
+    <meta name="description" content="Andrew McGowan is a web developer and designer located in the Fraser Valley. His skills are mostly based in UI development, however, he is also a solid programmer and great with PHP and MySQL. He has experience with JavaScript, CSS3, Less, HTML5, PHP, MySQL. He is also currently learning more about the operations side of development while managing his own portfolio.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Less, PHP, MySQL, Web Developer Portfolio, Andrew McGowan, Andrew, McGowan, Web Design, Web Developer, Graphic Design, Abbotsford Web Developer, Abbotsford Programmer, Abbotsford, Abbotsford BC Web Development, Fraser Valley Web Development, Lower Mainland Web Development,  Goonworx, ACM, Web development in Abbotsford, Programmers in Abbotsford, Abbotsford Programmer, Graphic Designer Abbotsford, Graphic Designers in Abbotsford, Web developers in Abbotsford, Rubrix, Discovery Software, eVision Media, Kate Hughes Design, Code it like a Rockstar, Milestones Langley, Langley Christmas Bureau, Autism Awareness, Autism, Autism Society of BC"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -24,7 +27,7 @@
 	  				<span class="icon-bar"></span>
 	  				<span class="icon-bar"></span>
 	  			</button>
-	  			<a class="navbar-brand" href="#">GoonWorx</a>
+	  			<a class="navbar-brand" href="http://www.goonworx.com/">GoonWorx</a>
 	  		</div>
 	  		<div class="collapse navbar-collapse am-navbar pull-right">
 	  			<ul class="nav navbar-nav">
@@ -46,7 +49,7 @@
   	</nav>
   	<div class="jumbotron">
   		<div class="container">
-	  		<h1>Andrew Craig McGowan</h1>
+	  		<h1>Andrew C. McGowan</h1>
 	  		<p class="lead">Web developer in the Fraser Valley specializing in front end design and development</p>
 	  	</div>
   	</div>
@@ -83,9 +86,9 @@
 	  		</div>
   		</article>
   	</div>
-    <section id="recent-work" class="slider">  
+    <section id="web-development" class="slider">  
 	   <div class="container">
-	   		<h2>Recent Work
+	   		<h2>Web Development
 		   		
 	   		</h2>
 	   		<article class="row slide-right rubrix">
@@ -200,12 +203,108 @@
 				</div>		   		
 	   		</article>
 	   		<article class="row slide-right hughes">
-		   		<p><a class="slide-back btn btn-default">Back</a></p>
+		   		<div class="hidden-xs col-sm-6 col-md-3">
+	   				<div class="thumbnail">
+	   					<img src="images/hughes-1.jpg" width="400" height="308">
+	   				</div>
+	   				<div class="thumbnail">
+	   					<img src="images/hughes-2.jpg" width="400" height="308">
+	   				</div>
+	   			</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Kate Hughes Design
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+	   						<img src="images/hughes-1.jpg" width="400" height="308">
+		   				</div>
+		   				<div class="thumbnail">
+		   					<img src="images/hughes-2.jpg" width="400" height="308">
+		   				</div>
+	   				</div>
+	   				<p>Developed this website to a designers specification. This was quite a challenge as the designer was very particular about timing and how things should move together.<p>
+	   				<p>When developing this site I had not yet discovered the power of CSS3 transitions, so all animations are done in JavaScript. A large chunk of the JavaScript is a set of functions just dedicated to drawing an array of lines. Looking back at the code now, a lot of the JavaScript complexity and state management could be reduced by utilizing CSS3 transitions.</p>
+	   				<p>Despite realizing now that this could have been done simpler, this is still some of the most interesting JavaScript I've written. Prior to working on this project I had not even considered developing a site as a single page. Doing things this way creates a much more unique web experience.</p>
+	   				<p><a target="_blank" href="http://www.katehughesdesign.com/">View the full site here</a></p>
+	   			</div>
+				<div class="col-sm-6 col-md-3">
+					<div data-value="70" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-rocket"></i>
+	   						<p>JS</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="20" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-css3"></i>
+	   						<p>CSS3</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="10" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-html5"></i>
+	   						<p>HTML5</p>
+	   					</div>
+	   				</div>
+				</div>		   		
 	   		</article>
 	   		<article class="row slide-right woody">
-	   			<div class="col-md-12">
-	   				<p><a class="slide-back btn btn-default">Back</a></p>
+	   			<div class="hidden-xs col-sm-6 col-md-3">
+   					<div class="thumbnail">
+	   					<img src="images/woody-sed-1.jpg" width="400" height="342">
+	   				</div>
+	   				<div class="thumbnail">
+	   					<img src="images/woody-sed-2.jpg" width="400" height="342">
+	   				</div>
+		   		</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Woody Sed
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+		   					<img src="images/woody-sed-1.jpg" width="400" height="342">
+		   				</div>
+		   				<div class="thumbnail">
+		   					<img src="images/woody-sed-2.jpg" width="400" height="342">
+		   				</div>
+	   				</div>
+	   				<p>Woody Sed is a site developed for Kate Hughes Design. This was developed based on a graphic designers specifications.<p>
+	   				<p>The <a href="http://buildinternet.com/project/supersized/" target="_blank">Supersized jQuery plugin</a> was used to handle the full page backgrounds and transitions between them. A custom LightBox style popup was used to display additional content which also uses a custom scrollbar in order to maintain consistent scrollbar visuals across all browsers.</p>
+	   				<p>A custom gallery script was also developed for the gallery page in order to deal with the shadowing required on each of the full size images.</p>
+	   				<p><a target="_blank" href="http://www.woodysed.com/">View the full site here</a></p>
 	   			</div>
+				<div class="col-sm-6 col-md-3">
+					<div data-value="50" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-rocket"></i>
+	   						<p>JS</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="35" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-css3"></i>
+	   						<p>CSS3</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="15" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-html5"></i>
+	   						<p>HTML5</p>
+	   					</div>
+	   				</div>
+				</div>		   		
 	   		</article>
 	   		
 	   		<article class="slider-nav row">
@@ -256,6 +355,222 @@
 		   				<div class="caption">
 		   					<h3>Woody Sed</h3>
 		   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
+		   				</div>
+		   				<div class="caption more">
+		   					<a data-target="woody" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
+		   				
+		   			</div>
+		   		</div>
+	   		</article>
+	   </div>
+   </section>
+       <section id="design" class="slider">  
+	   <div class="container">
+	   		<h2>Design Work
+		   		
+	   		</h2>
+	   		<article class="row slide-right rubrix">
+	   			<div class="hidden-xs col-sm-6 col-md-3">
+	   				<div class="thumbnail">
+	   					<img src="images/christmas-bureau-full.jpg" width="400" height="820">
+	   				</div>
+	   			</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Christmas Bureau Fundraiser
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+	   						<img src="images/christmas-bureau-full.jpg" width="400" height="820">
+	   					</div>
+	   				</div>
+	   				<p>The Milestones in Langley regularly hosts fundraisers for local charities and causes. I donate my time to them in assisting with producing promotional materials. This Christmas they will be raising funds for the Langley Christmas Bureau. These special nights include a variety of entertainment and fantastic meals. All gratuities during these evenings are donated directly to the cause.</p>
+	   				<p>This contribution to the evening is a billfold insert promoting the upcoming event. It was a bit of a rush job, having to go from initial discussion to completion in less than 24 hours, but overall I'm pleased with the result. Milestones was as well.</p>
+	   			</div>
+				<div class="col-sm-6 col-md-3">
+					
+				</div>		   		
+	   		</article>
+	   		<article class="row slide-right poster">
+	   			<div class="hidden-xs col-sm-6 col-md-6">
+	   				<div class="thumbnail">
+	   					<img src="images/autism-full.jpg" width="650" height="418">
+	   				</div>
+	   			</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Autism Awareness Night
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+		   					<img src="images/autism-full.jpg" width="650" height="418">
+		   				</div>
+	   				</div>
+	   				<p>The Milestones in Langley regularly hosts fundraisers for local charities and causes. I donate my time to them in assisting with producing promotional materials.<p>
+	   				<p>This is a pamphlet produced for the Milestones 2nd Annual Autism Awareness Night. This was an evening full of live entertainment and raffles where all gratuities were donated to the Autism Society of BC.</p>
+	   				<p>This is by far the largest tri-fold pamphlet I have ever produced at 11" x 17". I was sceptical at this requirement during our first meeting, however, when I received the copy I understood their reasoning as it was 4 long newspaper articles.</p>
+	   				<p>By the time I had received the copy I had already started working on the overall design as I was given enough information to get started on the front flap. Had I known more about what I was creating I'm not certain I would have chosen the circle theme. Looking back on this now, I would have liked to have made this up like a newspaper. </p>
+	   				<p>However, time was tight on this project having been informed of it 2 days prior to the event. I stuffed the content in with the design I had already decided on in order to meet the deadline. Despite how I would have liked to do this completely different Milestones was still happy with the result.</p>
+	   			</div>	
+	   		</article>
+	   		<article class="row slide-right hughes">
+		   		<div class="hidden-xs col-sm-6 col-md-3">
+	   				<div class="thumbnail">
+	   					<img src="images/hughes-1.jpg" width="400" height="308">
+	   				</div>
+	   				<div class="thumbnail">
+	   					<img src="images/hughes-2.jpg" width="400" height="308">
+	   				</div>
+	   			</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Save the Date
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+	   						<img src="images/hughes-1.jpg" width="400" height="308">
+		   				</div>
+		   				<div class="thumbnail">
+		   					<img src="images/hughes-2.jpg" width="400" height="308">
+		   				</div>
+	   				</div>
+	   				<p>Developed this website to a designers specification. This was quite a challenge as the designer was very particular about timing and how things should move together.<p>
+	   				<p>When developing this site I had not yet discovered the power of CSS3 transitions, so all animations are done in JavaScript. A large chunk of the JavaScript is a set of functions just dedicated to drawing an array of lines. Looking back at the code now, a lot of the JavaScript complexity and state management could be reduced by utilizing CSS3 transitions.</p>
+	   				<p>Despite realizing now that this could have been done simpler, this is still some of the most interesting JavaScript I've written. Prior to working on this project I had not even considered developing a site as a single page. Doing things this way creates a much more unique web experience.</p>
+	   				<p><a target="_blank" href="http://www.katehughesdesign.com/">View the full site here</a></p>
+	   			</div>
+				<div class="col-sm-6 col-md-3">
+					<div data-value="70" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-rocket"></i>
+	   						<p>JS</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="20" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-css3"></i>
+	   						<p>CSS3</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="10" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-html5"></i>
+	   						<p>HTML5</p>
+	   					</div>
+	   				</div>
+				</div>		   		
+	   		</article>
+	   		<article class="row slide-right woody">
+	   			<div class="hidden-xs col-sm-6 col-md-3">
+   					<div class="thumbnail">
+	   					<img src="images/woody-sed-1.jpg" width="400" height="342">
+	   				</div>
+	   				<div class="thumbnail">
+	   					<img src="images/woody-sed-2.jpg" width="400" height="342">
+	   				</div>
+		   		</div>
+	   			<div class="col-xs-12 col-sm-6 col-md-6">
+	   				<h3>Buccaneer Building
+	   					<a class="slide-back pull-right hint" title="Back">
+		   					<i class="fa fa-chevron-circle-left"></i>
+	   					</a>
+	   				</h3>
+	   				<div class="col-xs-6 pull-left visible-xs">
+		   				<div class="thumbnail">
+		   					<img src="images/woody-sed-1.jpg" width="400" height="342">
+		   				</div>
+		   				<div class="thumbnail">
+		   					<img src="images/woody-sed-2.jpg" width="400" height="342">
+		   				</div>
+	   				</div>
+	   				<p>Woody Sed is a site developed for Kate Hughes Design. This was developed based on a graphic designers specifications.<p>
+	   				<p>The <a href="http://buildinternet.com/project/supersized/" target="_blank">Supersized jQuery plugin</a> was used to handle the full page backgrounds and transitions between them. A custom LightBox style popup was used to display additional content which also uses a custom scrollbar in order to maintain consistent scrollbar visuals across all browsers.</p>
+	   				<p>A custom gallery script was also developed for the gallery page in order to deal with the shadowing required on each of the full size images.</p>
+	   				<p><a target="_blank" href="http://www.woodysed.com/">View the full site here</a></p>
+	   			</div>
+				<div class="col-sm-6 col-md-3">
+					<div data-value="50" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-rocket"></i>
+	   						<p>JS</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="35" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-css3"></i>
+	   						<p>CSS3</p>
+	   					</div>
+	   				</div>
+	   				<div data-value="15" class="chart breakdown text-center col-sm-4 col-md-12">
+	   					<canvas width="100" height="100"></canvas>
+	   					<div>
+	   						<i class="fa fa-html5"></i>
+	   						<p>HTML5</p>
+	   					</div>
+	   				</div>
+				</div>		   		
+	   		</article>
+	   		
+	   		<article class="slider-nav row">
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/christmas-bureau.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Christmas Bureau</h3>
+		   					<p>Billfold insert promoting a Milestones fundraiser for the Langley Christmas Bureau. </p>
+		   				</div>
+		   				<div class="caption more">
+		   					<a data-target="rubrix" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
+		   				
+		   				
+		   			</div>
+		   		</div>
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/autism.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Autism Awareness</h3>
+		   					<p>Pamphlet distributed at the 2nd Annual Milestones Autism Awareness night. </p>
+		   					
+		   				</div>
+		   				<div class="caption more">
+		   					<a data-target="poster" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
+		   				
+		   			</div>
+		   		</div>
+		   		<div class="clearfix visible-sm"></div>
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/save-the-date.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Save the Date</h3>
+		   					<p>Save the date card designed for my wedding in 2012.</p>
+		   				</div>
+		   				<div class="caption more">
+		   					<a data-target="hughes" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
+		   			</div>
+		   		</div>
+		   		<div class="col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="images/buccaneer.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Buccaneer Building</h3>
+		   					<p>A flyer for advertisement purposes of local renovation and construction company.</p>
 		   				</div>
 		   				<div class="caption more">
 		   					<a data-target="woody" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
