@@ -1,12 +1,12 @@
 [submodule "bootstrap-theme-mcgowan"]
-	path = bootstrap-theme-mcgowan
-	url = git@github.com:amcgowan/bootstrap-theme.git
+        path = bootstrap-theme-mcgowan
+        url = https://github.com/amcgowan/bootstrap-theme.git
 [submodule "bootstrap-3.0.0"]
-	path = bootstrap-3.0.0
-	url = git@github.com:twbs/bootstrap.git
+        path = bootstrap-3.0.0
+        url = https://github.com/twbs/bootstrap.git
 [submodule "elements"]
-	path = elements
-	url = git@github.com:amcgowan/elements.git
+        path = elements
+        url = https://github.com/amcgowan/elements.git
 [submodule "chartjs"]
-	path = chartjs
-	url = git@github.com:nnnick/Chart.js.git
+        path = chartjs
+        url = https://github.com/nnnick/Chart.js.git
