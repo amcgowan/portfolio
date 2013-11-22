@@ -389,9 +389,28 @@ body {
 .slider article.row.hughes > div .thumbnail {
   margin-bottom: 10px;
 }
+.slider article.row .aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+.slider article.row .aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
 #web-development {
   background: silver;
 }
 #design {
   background: #81859b;
+}
+#game-development {
+  background: #6fa5b1;
+}
+.jumbotron {
+  margin-bottom: 0px;
 }
