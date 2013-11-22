@@ -737,6 +737,18 @@
    		</article>
    	</div>
    </section>
+   <footer>
+   	<div class="container">
+   		<div class="copy pull-left">
+   			&copy; GoonWorx <?= date("Y"); ?>
+   		</div>
+   		<div class="pull-right">
+	  			<a target="_blank" href="http://www.facebook.com/andrew.mcgowan.90"><i class="fa fa-facebook-square hint" title="Facebook"></i></a>
+	  			<a target="_blank" href="http://www.linkedin.com/pub/andrew-mcgowan/14/7b/ab1"><i class="fa fa-linkedin-square hint" title="LinkedIn"></i></a>
+	  			<a target="_blank" href="http://vimeo.com/channels/615719"><i class="fa fa-vimeo-square hint" title="Vimeo"></i></a>
+	  	</div>
+   	</div>
+   </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="js/Chart.min.js"></script>

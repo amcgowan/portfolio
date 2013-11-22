@@ -376,11 +376,41 @@ body {
 	background: silver;
 }
 #design {
-	background: #81859b;
+	background: #eee;
 }
 #game-development {
-	background: #6fa5b1;
+	background: silver;
+}
+#work-experience {
+	background: #eee;
+	article + article {
+		padding-bottom: 15px;
+		&:before {
+			width: 50%;
+			margin-left: 25%;
+			height: 1px;
+			background: darken(#eee, 10%);
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+	}
 }
 .jumbotron {
 	margin-bottom: 0px;
+
+}
+footer {
+	background: #222;
+	color: #999;
+	.copy {
+		padding-top: 8px;
+	}
+	a {
+		margin-left: 10px;
+		color: #999;
+		font-size: 25px;
+		&:hover {
+			color: #ccc;
+		}
+	}
 }
