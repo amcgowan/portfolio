@@ -1,3 +1,4 @@
+<? include 'form_security.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -735,6 +736,38 @@
 	   			<p>I have been working as a professional web developer with 3+ years of experience. I obtained my Bachelor's of Computer Information Systems in 2010. My studies did not strictly focus on web development, they focused on principles of software development and programming. This has given me a solid foundation to work with in the world of web development which forces you to dive into more than five different programming languages on a daily basis, and keep up with new technology and frameworks.</p>
 	   		</div>
    		</article>
+   	</div>
+   </section>
+   <section id="contact">
+   	<div class="container">
+   		<h2>Contact Me</h2>
+   		<form method="post" action="send_mail.php">
+   			<?= tokenize(); ?>
+   			<div class="row">
+	   			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+		   			<div class="row">
+		   				<div class="form-group col-sm-6">
+		   					<label for="name" class="control-label">Name</label>
+		   					<input type="text" class="form-control" name="name" id="name"/>
+		   				</div>
+		   				<div class="form-group col-sm-6">
+		   					<label for="email" class="control-label">Email</label>
+		   					<input type="text" class="form-control" name="email" id="email"/>			
+		   				</div>
+		   			</div>
+		   			<div class="clearfix"></div>
+		   			<div class="row">
+			   			<div class="col-sm-12 form-group">
+	   						<label for="message" class="ontrol-label">Message</label>
+	   						<textarea class="form-control" name="message" rows="4"></textarea>
+			   			</div>
+			   			<div class="col-sm-12 form-group">
+			   				<button type="submit" class="btn btn-success">Send</button>
+			   			</div>
+		   			</div>
+	   			</div>
+   			</div>
+   		</form>
    	</div>
    </section>
    <footer>

@@ -244,8 +244,8 @@ body {
   }
 }
 .slider div.container {
-  min-height: 1763px;
-  max-height: 1763px;
+  min-height: 1783px;
+  max-height: 1783px;
   padding-bottom: 30px;
   -webkit-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
   -moz-transition: 0.5s ease-in-out min-height 0s, 0.5s ease-in-out max-height 0s;
@@ -424,6 +424,10 @@ body {
   background: #d5d5d5;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+#contact {
+  background: #3c3c3c;
+  color: #999;
 }
 .jumbotron {
   margin-bottom: 0px;
