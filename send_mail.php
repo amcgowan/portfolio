@@ -6,7 +6,7 @@ if (!empty($_POST)) {
 		$name = clean($_POST['name']);
 		$message = cleanHtml($_POST['message']);
 		
-		mail("andrew@goonworx.com", "Subject: Someone wants to contact YOU!", $message, "From: $email");
+		mail("andrew@goonworx.com", "Subject: $name wants to contact YOU!", "$message\n\n-$name", "From: $name <$email>");
 	} 
 } else {
 	header("HTTP/1.0 400 Bad Request");
