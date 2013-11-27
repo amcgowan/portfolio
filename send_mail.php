@@ -7,9 +7,7 @@ if (!empty($_POST)) {
 		$message = cleanHtml($_POST['message']);
 		
 		mail("andrew@goonworx.com", "Subject: Someone wants to contact YOU!", $message, "From: $email");
-	} else {
-		header("HTTP/1.0 400 Bad Request");
-	}
+	} 
 } else {
 	header("HTTP/1.0 400 Bad Request");
 	echo "Go away, you cannot access this directly.";
