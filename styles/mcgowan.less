@@ -398,14 +398,25 @@ body {
 #contact {
 	background: lighten(#222,10%);
 	color: #999;
+	position: relative;
 	div.container {
-		min-height: 0px;
+		min-height: 439px; max-height: 439px;
+		@media only screen and (min-width : 768px) { 
+			min-height: 360px; max-height: 360px; 
+		}
+		@media only screen and (min-width : 992px) { 
+			min-height: 360px; max-height: 360px; 
+		}
+		@media only screen and (min-width : 1200px) { 
+			min-height: 360px; max-height: 360px; 
+		}
 	}
 	article.send {
 		height: 200px;
 		div {
 			.transition(.2s);
 			position: absolute;
+			margin-top: 32px;
 		}
 		.sent { opacity: 1; }
 		.working { opacity: 0; }
@@ -418,6 +429,14 @@ body {
 			.sent { opacity: 0; }
 			.error { opacity: 1; }
 		}
+	}
+	.loader {
+		position: absolute;
+		left: 50%;
+		margin-left: -33px;
+		top: 50%;
+		margin-top: -33px;
+		display: none;
 	}
 }
 form .form-group {

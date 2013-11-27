@@ -740,17 +740,21 @@
    </section>
    <section id="contact" class="slider">
    	<div class="container">
-   		<h2>Contact Me</h2>
+   		<article class="row text-center">
+   			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+   			<h2>Contact Me</h2>
+   			</div>
+   		</article>
+   		<img src="images/ajax-loader.gif" class="loader"/>
    		<article class="row slide-right send working">
-   			<div class="col-sm-12">
-		   		<div class="working">
-		   			<p>Your message is being sent</p>
+   			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
+		   		<div class="sent text-center">
+		   			<h3>Thank you!</h3>
+		   			<p>Your message has been received. I appreciate you taking time to contact me. I will get back to you shortly!</p>
 		   		</div>
-		   		<div class="sent">
-		   			<p>Your message has been sent</p>
-		   		</div>
-		   		<div class="error">
-		   			<p>Your message could not be sent</p>
+		   		<div class="error text-center">
+		   			<h3>Sorry...</h3>
+		   			<p>It appears your message couldn't be sent. This is probably due to your session becoming invalid. If you are not trying to spam me, please refresh the page and try again.</p>
 		   		</div>
    			</div>
    		</article>
@@ -777,7 +781,7 @@
 		   						<p class="error pull-right">Please enter a message</p>
 		   						<textarea class="form-control" name="message" rows="4"></textarea>
 				   			</div>
-				   			<div class="col-sm-12 form-group">
+				   			<div class="col-sm-12 form-group text-center">
 				   				<button type="submit" class="btn btn-success">Send</button>
 				   			</div>
 			   			</div>
@@ -886,13 +890,11 @@
 					    		input.closest('.form-group').addClass('has-error');
 				    	} 
 				    }
-		    		
-		    		
-		    		
 	    		});
 	    		
 	    		if (valid) {
 		    		slideTo(form.closest('article'), 'send');
+		    		$('.loader').fadeIn();
 		    		$.ajax({
 			    		url: form.attr('action'),
 			    		type: 'POST', 
@@ -907,7 +909,11 @@
 			    				.find('article.send')
 			    				.removeClass('working')
 			    				.addClass('error');
+			    		},
+			    		complete: function() {
+				    		$('.loader').fadeOut();
 			    		}
+			    		
 		    		})
 	    		}
 	    		

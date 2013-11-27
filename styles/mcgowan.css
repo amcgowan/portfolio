@@ -428,9 +428,29 @@ body {
 #contact {
   background: #3c3c3c;
   color: #999;
+  position: relative;
 }
 #contact div.container {
-  min-height: 0px;
+  min-height: 439px;
+  max-height: 439px;
+}
+@media only screen and (min-width: 768px) {
+  #contact div.container {
+    min-height: 360px;
+    max-height: 360px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #contact div.container {
+    min-height: 360px;
+    max-height: 360px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #contact div.container {
+    min-height: 360px;
+    max-height: 360px;
+  }
 }
 #contact article.send {
   height: 200px;
@@ -441,6 +461,7 @@ body {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   position: absolute;
+  margin-top: 32px;
 }
 #contact article.send .sent {
   opacity: 1;
@@ -462,6 +483,14 @@ body {
 }
 #contact article.send.error .error {
   opacity: 1;
+}
+#contact .loader {
+  position: absolute;
+  left: 50%;
+  margin-left: -33px;
+  top: 50%;
+  margin-top: -33px;
+  display: none;
 }
 form .form-group p.error {
   -webkit-transition: all 0.2s ease-out;
