@@ -32,6 +32,9 @@ function validForm() {
 		}		
 	}
 	
+	header("HTTP/1.0 400 Bad Request");
+	echo json_encode(array('error' => 'session', 'message' => 'Your session is invalid. Please refresh and try again.'));
+	
 	return false;
 }
 
@@ -40,6 +43,10 @@ function notSpammer() {
 	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 		return true;
 	}
+
+	header("HTTP/1.0 400 Bad Request");
+	echo json_encode(array('error' => 'email', 'message' => 'Please enter a valid email address'));
+	
 	return false;
 }
 
