@@ -738,36 +738,53 @@
    		</article>
    	</div>
    </section>
-   <section id="contact">
+   <section id="contact" class="slider">
    	<div class="container">
    		<h2>Contact Me</h2>
-   		<form method="post" action="send_mail.php">
-   			<?= tokenize(); ?>
-   			<div class="row">
-	   			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-		   			<div class="row">
-		   				<div class="form-group col-sm-6">
-		   					<label for="name" class="control-label">Name</label>
-		   					<input type="text" class="form-control" name="name" id="name"/>
-		   				</div>
-		   				<div class="form-group col-sm-6">
-		   					<label for="email" class="control-label">Email</label>
-		   					<input type="text" class="form-control" name="email" id="email"/>			
-		   				</div>
-		   			</div>
-		   			<div class="clearfix"></div>
-		   			<div class="row">
-			   			<div class="col-sm-12 form-group">
-	   						<label for="message" class="ontrol-label">Message</label>
-	   						<textarea class="form-control" name="message" rows="4"></textarea>
-			   			</div>
-			   			<div class="col-sm-12 form-group">
-			   				<button type="submit" class="btn btn-success">Send</button>
-			   			</div>
-		   			</div>
-	   			</div>
+   		<article class="row slide-right send working">
+   			<div class="col-sm-12">
+		   		<div class="working">
+		   			<p>Your message is being sent</p>
+		   		</div>
+		   		<div class="sent">
+		   			<p>Your message has been sent</p>
+		   		</div>
+		   		<div class="error">
+		   			<p>Your message could not be sent</p>
+		   		</div>
    			</div>
-   		</form>
+   		</article>
+   		<article class="slider-nav row">
+	   		<form method="post" action="send_mail.php">
+	   			<?= tokenize(); ?>
+	   				<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+			   			<div class="row">
+			   				<div class="form-group col-sm-6">
+			   					<label for="name" class="control-label">Name</label>
+			   					<p class="error pull-right">Please enter your name</p>
+			   					<input type="text" class="form-control" name="name" id="name"/>
+			   				</div>
+			   				<div class="form-group col-sm-6">
+			   					<label for="email" class="control-label">Email</label>
+			   					<p class="error pull-right">Enter a valid email</p>
+			   					<input type="text" class="form-control" name="email" id="email"/>			
+			   				</div>
+			   			</div>
+			   			<div class="clearfix"></div>
+			   			<div class="row">
+				   			<div class="col-sm-12 form-group">
+		   						<label for="message" class="control-label">Message</label>
+		   						<p class="error pull-right">Please enter a message</p>
+		   						<textarea class="form-control" name="message" rows="4"></textarea>
+				   			</div>
+				   			<div class="col-sm-12 form-group">
+				   				<button type="submit" class="btn btn-success">Send</button>
+				   			</div>
+			   			</div>
+		   			</div>
+	   			
+	   		</form>
+   		</article>
    	</div>
    </section>
    <footer>
@@ -814,31 +831,87 @@
 		    		}, 1500);
 	    	});
     	}
+  
+		function isValidEmailAddress(emailAddress) {
+		     var pattern = new RegExp(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/);
+		     return pattern.test(emailAddress);
+		};
+
+    	function slideTo(row, slide) {
+	    	row.addClass('slide-left')
+	    			.parent()
+	    			.addClass('slide')
+	    			.find('.' + slide)
+	    			.removeClass('slide-right');
+	    	
+	    	runCharts(row.closest('.container').find('.' + slide + ' .chart'));
+    	}
+    	
+    	function slideBack(row) {
+	    	row.addClass('slide-right')
+	    		.parent()
+	    		.removeClass('slide')
+	    		.find('.slide-left')
+	    		.removeClass('slide-left');
+    	}
 
     	$(document).ready(function(e) {
 	    	$('.btn.slide').click(function() {
 		    	var btn = $(this);
-		    	btn.closest('.row')
-		    		.addClass('slide-left')
-		    		.parent()
-		    		.addClass('slide')
-		    		.find('.' + btn.attr('data-target'))
-		    		.removeClass('slide-right');
-		    	runCharts(btn.closest('.container').find('.' + btn.attr('data-target') + ' .chart'));
-
+		    	slideTo(btn.closest('.row'), btn.attr('data-target'));
 	    	});
 	    	$('a.slide-back').click(function() {
 		    	var btn = $(this);
 		    	btn.tooltip('hide');
-		    	btn.closest('.row')
-		    		.addClass('slide-right')
-		    		.parent()
-		    		.removeClass('slide')
-		    		.find('.slide-left')
-		    		.removeClass('slide-left');
+		    	slideBack(btn.closest('.row'));
 	    	});
 	    	$('.hint').tooltip({
 		    	container: 'body'
+	    	});
+	    	
+	    	$('#contact form').submit(function() {
+	    		var form = $(this),
+	    			valid = true;
+
+	    		form.find('.form-control').each(function(i, o) {
+		    		var input = $(o);
+		    		if (input.val().length == 0) {
+			    		input.closest('.form-group').addClass('has-error');
+			    		valid = false;
+		    		} else {
+			    		input.closest('.form-group').removeClass('has-error');
+			    		if (input.attr('name') === 'email' && 
+			    			!(isValidEmailAddress(input.val()))) {
+					    		valid = false;
+					    		input.closest('.form-group').addClass('has-error');
+				    	} 
+				    }
+		    		
+		    		
+		    		
+	    		});
+	    		
+	    		if (valid) {
+		    		slideTo(form.closest('article'), 'send');
+		    		$.ajax({
+			    		url: form.attr('action'),
+			    		type: 'POST', 
+			    		data: form.serialize(),
+			    		success: function() {
+			    			form.closest('.container')
+			    				.find('article.send')
+			    				.removeClass('working');
+			    		}, 
+			    		error: function() {
+				    		form.closest('.container')
+			    				.find('article.send')
+			    				.removeClass('working')
+			    				.addClass('error');
+			    		}
+		    		})
+	    		}
+	    		
+		    	return false;
 	    	});
     	});
     </script>
