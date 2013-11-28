@@ -73,7 +73,7 @@
   			<article class="row">
   			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
   			<h2>
-  				You are using an olfdsad version of IE! Please do a web developer a favour and <a target="_blank" href="http://windows.microsoft.com/en-ca/internet-explorer/ie-10-worldwide-languages">upgrade to IE10</a>. 
+  				You are using an old version of IE! Please do a web developer a favour and <a target="_blank" href="http://windows.microsoft.com/en-ca/internet-explorer/ie-10-worldwide-languages">upgrade to IE10</a>. 
   			</h2>
   	<![endif]-->
   	<!--[if IE 9]>
