@@ -14,8 +14,8 @@
 	
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#navbar">
@@ -73,15 +73,15 @@
   			<article class="row">
   			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
   			<h2>
-  				You are using an old version of IE! Please do a web developer a favour and <a target="_blank" href="http://windows.microsoft.com/en-ca/internet-explorer/ie-10-worldwide-languages">upgrade to IE10</a>. 
+  				You are using an olfdsad version of IE! Please do a web developer a favour and <a target="_blank" href="http://windows.microsoft.com/en-ca/internet-explorer/ie-10-worldwide-languages">upgrade to IE10</a>. 
   			</h2>
   	<![endif]-->
-  	<!--[if eq IE 9]>
+  	<!--[if IE 9]>
   			<p class="lead">
-  				You are currently using IE9, this browser will display this site, however you are missing out on so much of what the internet has to offer! We beg you, please, please stay up to date with current browsers!
+  				You are currently using IE9! This browser will display this site, however you are missing out on so much of what the internet has to offer! We beg you, please, please stay up to date with current browsers!
   			</p>
   	<![endif]-->
-  	<!--[if eq IE 8]>
+  	<!--[if IE 8]>
   			<p class="lead">
   				You are currently using IE8. You are part of a <A href="http://theie8countdown.com/join-the-cause">very small group of the population</a>. Please use the link above to upgrade your browser and start enjoying all of what the internet has to offer.
   			</p>
