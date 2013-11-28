@@ -83,12 +83,12 @@
   	<![endif]-->
   	<!--[if IE 8]>
   			<p class="lead">
-  				You are currently using IE8. You are part of a <A href="http://theie8countdown.com/join-the-cause">very small group of the population</a>. Please use the link above to upgrade your browser and start enjoying all of what the internet has to offer.
+  				You are currently using IE8. You are part of a <A href="http://theie8countdown.com/join-the-cause">very small group of the population</a>. <strong>This site does not support IE8</strong>.
   			</p>
   	<![endif]-->
   	<!--[if lt IE 8]>
   			<p class="lead">
-  				You are using a version of IE that is older than IE8! You really need to upgrade that browser to IE10 if you want to enjoy all of what our modern internet has to offer.
+  				You are using a version of IE that is older than IE8! <strong>This site only supports IE9 and up</strong>.
   			</p>
   	<![endif]-->
   	<!--[if lt IE 10]>
