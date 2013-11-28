@@ -1,25 +1,25 @@
 path.shadow,
 polygon.shadow,
 ellipse.shadow {
-  fill: #494c43;
+  fill: #333333;
 }
 path.light-shadow,
 polygon.light-shadow,
 ellipse.light-shadow {
-  fill: #343435;
+  fill: #555555;
 }
 path.base,
 polygon.base,
 ellipse.base {
-  fill: #737376;
+  fill: #999999;
 }
 path.highlight,
 polygon.highlight,
 ellipse.highlight {
-  fill: #a6a6a9;
+  fill: #eeeeee;
 }
 path.outline,
 polygon.outline,
 ellipse.outline {
-  fill: #151613;
+  fill: #999999;
 }
