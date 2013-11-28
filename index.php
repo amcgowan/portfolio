@@ -75,21 +75,23 @@
   			<h2>
   				You are using an old version of IE! Please do a web developer a favour and <a target="_blank" href="http://windows.microsoft.com/en-ca/internet-explorer/ie-10-worldwide-languages">upgrade to IE10</a>. 
   			</h2>
-  			<!--[if eq IE 9]>
+  	<![endif]-->
+  	<!--[if eq IE 9]>
   			<p class="lead">
   				You are currently using IE9, this browser will display this site, however you are missing out on so much of what the internet has to offer! We beg you, please, please stay up to date with current browsers!
   			</p>
-  			<![endif]-->
-  			<!--[if eq IE 8]>
+  	<![endif]-->
+  	<!--[if eq IE 8]>
   			<p class="lead">
   				You are currently using IE8. You are part of a <A href="http://theie8countdown.com/join-the-cause">very small group of the population</a>. Please use the link above to upgrade your browser and start enjoying all of what the internet has to offer.
   			</p>
-  			<![endif]-->
-  			<!--[if lt IE 8]>
+  	<![endif]-->
+  	<!--[if lt IE 8]>
   			<p class="lead">
   				You are using a version of IE that is older than IE8! You really need to upgrade that browser to IE10 if you want to enjoy all of what our modern internet has to offer.
   			</p>
-  			<![endif]-->
+  	<![endif]-->
+  	<!--[if lt IE 10]>
   			</div>
   			</article>
   		</div>
