@@ -63,6 +63,9 @@ nav.navbar, footer {
 	.container {
 		padding-bottom: 0px;
 	}
+	li a {
+		.transition(.2s);
+	}
 }
 .container {
 	padding-bottom: 45px;
@@ -220,10 +223,17 @@ nav.navbar, footer {
 		}
 		.thumbnail {
 			position: relative;
-			max-width: 300px;
+			width: 300px;
 			.transitionMultiple(none);
+			@media only screen and (min-width : 768px) { 
+				width: 300px;
+			}
 			@media only screen and (min-width: 992px) {
 				height: 340px;
+				width: 205px;
+			}
+			@media only screen and (min-width : 1200px) { 
+				width: 255px;
 			}
 			margin-bottom: 30px;
 		}
@@ -497,6 +507,8 @@ form .form-group {
 footer {
 	background: @gray-darker;
 	color: @gray-light;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	.copy {
 		padding-top: 8px;
 	}
@@ -507,5 +519,15 @@ footer {
 		&:hover {
 			color: #ccc;
 		}
+	}
+}
+#ie {
+	background: @brand-danger;
+	color: @gray-lighter;
+	a {
+		color: @brand-warning;
+	}
+	p.lead {
+		margin-top: -40px;
 	}
 }

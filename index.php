@@ -67,39 +67,34 @@
 	
 	  	</div>
   	</div>
-  	<!--<div class="container technologies">
-  		<article class="row">
-	  		<div class="col-md-3 col-sm-6">
-	  			<div class="displays">
-	  				<div  class="center">
-	  					<i class="fa fa-desktop desktop"></i>
-	  					<i class="fa fa-laptop laptop"></i>
-	  					<i class="fa fa-mobile-phone mobile-phone"></i>
-	  				</div>
-	  			</div>
-	  			<h2>Less/CSS</h2>
-	  			<p>Uses Less to create clean and efficient style sheets that let your site display beautifully on any size device</p>
-	  		</div>
-	  		<div class="col-md-3 col-sm-6">
-	  			<i class="fa fa-code"></i>
-	  			<h2>HTML</h2>
-	  			<p>Your site will be developed with HTML5 to allow for a tidy site structure and rich user experience.</p>
-	  		</div>
-	  		
-	  		<div class="clearfix visible-sm"></div>
-	  		
-	  		<div class="col-md-3 col-sm-6">
-	  			<i class="fa fa-rocket"></i>
-	  			<h2>JavaScript</h2>
-	  			<p>JavaScript in conjunction with jQuery will provide wonderful functionality to your site.</p>
-	  		</div>
-	  		<div class="col-md-3 col-sm-6">
-	  			<i class="fa fa-cogs"></i>
-	  			<h2>PHP/SQL</h2>
-	  			<p>Not only will your site look good, but it can connect to a database do blah blh blha</p>
-	  		</div>
-  		</article>
-  	</div>-->
+  	<!--[if lt IE 10]>
+  	  	<section id="ie">
+  		<div class="container">
+  			<article class="row">
+  			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+  			<h2>
+  				You are using an old version of IE! Please do a web developer a favour and <a target="_blank" href="http://windows.microsoft.com/en-ca/internet-explorer/ie-10-worldwide-languages">upgrade to IE10</a>. 
+  			</h2>
+  			<!--[if eq IE 9]>
+  			<p class="lead">
+  				You are currently using IE9, this browser will display this site, however you are missing out on so much of what the internet has to offer! We beg you, please, please stay up to date with current browsers!
+  			</p>
+  			<![endif]-->
+  			<!--[if eq IE 8]>
+  			<p class="lead">
+  				You are currently using IE8. You are part of a <A href="http://theie8countdown.com/join-the-cause">very small group of the population</a>. Please use the link above to upgrade your browser and start enjoying all of what the internet has to offer.
+  			</p>
+  			<![endif]-->
+  			<!--[if lt IE 8]>
+  			<p class="lead">
+  				You are using a version of IE that is older than IE8! You really need to upgrade that browser to IE10 if you want to enjoy all of what our modern internet has to offer.
+  			</p>
+  			<![endif]-->
+  			</div>
+  			</article>
+  		</div>
+  	</section>
+  	<![endif]-->  
     <section id="web-development" class="slider">  
 	   <div class="container">
 	   		<article class="row">
@@ -177,16 +172,17 @@
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
-	   				<h3>Poster Design Contest
-	   				
+	   					   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
 		   					<img src="images/poster-full.jpg" width="400" height="587">
 		   				</div>
 	   				</div>
+	   				<h3>Poster Design Contest
+
 	   				</h3>
 	   				<p>This was a poster design contest held at Discovery Software. The idea was to encourage programmers and designers to think more about design and how to present information.<p>
-	   				<p>The only constraint was that each poster had to have something to do with what we do at Discovery Software. Since we produce a lot of code, I choose the route of a motivational poster to help inspire excellent code.</p>
+	   				<p>The only constraint was that each poster had to have something to do with what we do at Discovery Software. Since we produce a lot of code, I chose the route of a motivational poster to help inspire excellent code.</p>
 	   				<p>An additional challenge was proposed to the web development team to produce the poster using only HTML and CSS. This poster does just that using only HTML and CSS combined with Font Awesome.</p>
 	   				<p>
 	   			</div>
@@ -557,11 +553,11 @@
 	   				</h3>
 	   				<p>Project Unity was developed using the Microsoft XNA platform. It was created as a final project for an independent study of programming. This was a team effort and my role was focused on the Tile Engine, and User Interface.</p>
 	   				<p>
-	   					While the game was never fully completed, all the basics are implemented in order to create a full RPG. Creating an RPG is quite an ambition project and we continued development even after the course was completed, however eventually our team members had less and less time to contribute to the project.
+	   					While the game was never fully completed, all the basics are implemented in order to create a full RPG. Creating an RPG is quite an ambitious project and we continued development even after the course was completed, however eventually our team members had less and less time to contribute to the project.
 	   				</p>
 	   				<p>However, in it's current state we have a robust tile engine with multiple layers and collision detection, weather and spell particle system, combat engine, enemy AI, map editor, dialogue system, and animation editor.</p>
 	   				<p>In order to complete the game, we needed a lot of artwork and polish on the games basic systems.</p>
-	   				<p>Current tile set you see here is from <a href="lostgarden.com/2006/07/more-free-game-graphics.html">The Lost Garden</a>.</p> 
+	   				<p>Current tile set you see here is from <a target="_blank" href="http://lostgarden.com/2006/07/more-free-game-graphics.html">The Lost Garden</a>.</p> 
 	   			</div>
 	   		</article>
 	   		<article class="row slide-right mcracers">
@@ -577,7 +573,7 @@
 	   				</h3>
 	   				<p>I always enjoyed top down racers when growing up so I decided to create one as a final project for a Flash programming course.<p>
 	   				<p>A key element of a racing game is excellent collision detection and response. This game allowed me to investigate techniques to deal with this. In retrospect, I should have just used a physics framework like Box2D, however I was at a stage where I really wanted to do everything myself.</p>
-	   				<p>During my research I discovered the Seperating Axis Theorem. The basic principle is taking 2 objects and project them along a plane for each of their faces. If one of the projections has no overlapping parts, then the two objects are not colliding with each other.</p>
+	   				<p>During my research I discovered the Separating Axis Theorem. The basic principle is taking 2 objects and projecting them along a plane for each of their faces. If one of the projections has no overlapping parts, then the two objects are not colliding with each other.</p>
 	   				<p>This was an excellent tool as once the collision test is complete, you know exactly how much overlap there is on each face. You can then move the two objects away from each other using one of the planes of overlap. In this case, this was chosen by the vehicles velocity vectors</p>
 	   				</p>Since there was no physics engine, I just used a basic collision formula, and added a slight rotation to each car. It's not perfect, but it gets the idea across. 
 	   				
@@ -793,7 +789,10 @@
     <script src="js/Chart.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/easing.min.js"></script>
     <script type="text/javascript">
+    	var resizeTimeout; 
+    	
     	function runCharts(charts) {
 	    	charts.each(function(i,o) {
 		    	var chart = $(o),
@@ -855,13 +854,20 @@
     		setTimeout(function() {
     			$('html,body').animate({
 			    	scrollTop: target.offset().top - fixedOffset
-		    	}, duration);
+		    	}, duration, 'easeInOutQuart');
     		}, delay);
     	}
-
+    	
     	$(document).ready(function(e) {
     		$('body').scrollspy({ target: '#navbar', offset: $('#navbar').height() + 5 });
-    	
+    		
+    		$(window).resize(function() {
+	    		clearTimeout(resizeTimeout);
+	    		resizeTimeout = setTimeout($('[data-spy="scroll"]').each(function() {
+	    			var $spy = $(this).scrollspy('refresh');
+	    		}), 500);
+    		});
+    		
 	    	$('.btn.slide').click(function() {
 		    	var btn = $(this);
 
@@ -884,9 +890,13 @@
 	    	
 	    	$('a:not(.slide)').click(function() {
 	    		var link = $(this),
-		    		href = link.attr('href');
+		    		href = link.attr('href'),
+		    		data = $('body').data();
 
 		    	if (typeof href !== "undefined" && !link.hasClass('slide-back') && href.charAt(0) === "#") {
+		    		data['bs.scrollspy'].options.offset = $('#navbar').height() + 5;
+		    		data['bs.scrollspy'].refresh();
+		    		
 			    	scrollPage($(href));
 			    	return false;
 		    	}

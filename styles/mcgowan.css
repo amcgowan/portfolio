@@ -77,6 +77,13 @@ nav.navbar .container,
 footer .container {
   padding-bottom: 0px;
 }
+nav.navbar li a,
+footer li a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .container {
   padding-bottom: 45px;
 }
@@ -240,16 +247,27 @@ footer .container {
 }
 .slider .slider-nav .thumbnail {
   position: relative;
-  max-width: 300px;
+  width: 300px;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
   transition: none;
   margin-bottom: 30px;
 }
+@media only screen and (min-width: 768px) {
+  .slider .slider-nav .thumbnail {
+    width: 300px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .slider .slider-nav .thumbnail {
     height: 340px;
+    width: 205px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .slider .slider-nav .thumbnail {
+    width: 255px;
   }
 }
 .slider div.container {
@@ -601,6 +619,8 @@ form .form-group.has-error p.error {
 footer {
   background: #222222;
   color: #999999;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 footer .copy {
   padding-top: 8px;
@@ -612,4 +632,14 @@ footer a {
 }
 footer a:hover {
   color: #ccc;
+}
+#ie {
+  background: #d9534f;
+  color: #eeeeee;
+}
+#ie a {
+  color: #f0ad4e;
+}
+#ie p.lead {
+  margin-top: -40px;
 }
