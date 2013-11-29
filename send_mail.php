@@ -13,7 +13,7 @@ if (!empty($_POST)) {
 			mail("andrew@goonworx.com", "Subject: $name wants to contact YOU!", "$message\n\n-$name", "From: $name <$email>");
 
 		} else {
-			header("HTTP/1.0 503 Just hold up a bit!";
+			header("HTTP/1.0 503 Just hold up a bit!");
 			echo "Uhm, you trying to spam me, bro?";
 		}
 	} 

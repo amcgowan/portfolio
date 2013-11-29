@@ -667,6 +667,9 @@ article.row.active .thumbnail:hover:before {
 #contact article.send .error {
   opacity: 0;
 }
+#contact article.send .contacted {
+  opacity: 0;
+}
 #contact article.send.working .working {
   opacity: 1;
 }
@@ -677,6 +680,12 @@ article.row.active .thumbnail:hover:before {
   opacity: 0;
 }
 #contact article.send.error .error {
+  opacity: 1;
+}
+#contact article.send.contacted .sent {
+  opacity: 0;
+}
+#contact article.send.contacted .contacted {
   opacity: 1;
 }
 #contact .loader {

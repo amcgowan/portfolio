@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('db.php');
 
 function tokenize() {
 	$time = time();
@@ -39,7 +40,8 @@ function validForm() {
 }
 
 function contactedToday() {
-	$sql = "select ip from `contact` where ip = '".$_SERVER['REMOTE_ADDR']."' || email = '".$_POST['email']."' and date = '" . date("Y-m-d") . "'";
+	global $db;
+	$sql = "select ip from `contact` where (ip = '".$_SERVER['REMOTE_ADDR']."' || email = '".$_POST['email']."') and date = '" . date("Y-m-d") . "'";
 	
 	$result = mysqli_query($db, $sql);
 	
@@ -50,6 +52,7 @@ function contactedToday() {
 }
 
 function saveContact() {
+	global $db;
 	$sql = "insert into `contact` (`ip`, `email`, `name`, `date`, `message`) values ('" . $_SERVER['REMOTE_ADDR'] . "', '" . $_POST['email'] . "', '" . $_POST['name'] . "', '" . date("Y-m-d") . "', '" . $_POST['message'] . "')";
 	
 	mysqli_query($db, $sql);
