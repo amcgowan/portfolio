@@ -39,6 +39,26 @@ a {
   filter: alpha(opacity=50);
   margin-bottom: 1.7em;
 }
+@media only screen and (max-width: 320px) {
+  .jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .jumbotron hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .jumbotron hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
 h2 {
   margin-top: 2em;
   margin-bottom: 2em;
