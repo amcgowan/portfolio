@@ -740,6 +740,10 @@
 		   			<h3>Sorry...</h3>
 		   			<p>It appears your message couldn't be sent. This is probably due to your session becoming invalid. If you are not trying to spam me, please refresh the page and try again.</p>
 		   		</div>
+		   		<div class="contacted text-center">
+		   			<h3>You have already contacted me</h3>
+		   			<p>Your previous message has been received and I will get back to you shortly.</p>
+		   		</div>
    			</div>
    		</article>
    		<article class="slider-nav row">
@@ -975,11 +979,13 @@
 			    				.find('article.send')
 			    				.removeClass('working');
 			    		}, 
-			    		error: function() {
+			    		error: function(xhr) {
+			    			var c = xhr.status == 503 ? 'contacted' : 'error';
+
 				    		form.closest('.container')
 			    				.find('article.send')
 			    				.removeClass('working')
-			    				.addClass('error');
+			    				.addClass(c);
 			    		},
 			    		complete: function() {
 				    		$('.loader').fadeOut();

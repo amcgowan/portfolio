@@ -38,6 +38,23 @@ function validForm() {
 	return false;
 }
 
+function contactedToday() {
+	$sql = "select ip from `contact` where ip = '".$_SERVER['REMOTE_ADDR']."' || email = '".$_POST['email']."' and date = '" . date("Y-m-d") . "'";
+	
+	$result = mysqli_query($db, $sql);
+	
+	if (mysqli_num_rows($result) > 0) {
+		return true;
+	}
+	return false;
+}
+
+function saveContact() {
+	$sql = "insert into `contact` (`ip`, `email`, `name`, `date`, `message`) values ('" . $_SERVER['REMOTE_ADDR'] . "', '" . $_POST['email'] . "', '" . $_POST['name'] . "', '" . date("Y-m-d") . "', '" . $_POST['message'] . "')";
+	
+	mysqli_query($db, $sql);
+}
+
 function notSpammer() {
 	$_POST['email'] = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {

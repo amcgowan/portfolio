@@ -535,6 +535,7 @@ article.row.active .thumbnail {
 		.sent { opacity: 1; }
 		.working { opacity: 0; }
 		.error { opacity: 0; }
+		.contacted { opacity: 0; }
 		&.working {
 			.working { opacity: 1; } 
 			.sent { opacity: 0; }
@@ -542,6 +543,10 @@ article.row.active .thumbnail {
 		&.error {
 			.sent { opacity: 0; }
 			.error { opacity: 1; }
+		}
+		&.contacted {
+			.sent { opacity: 0; }
+			.contacted { opacity: 1; }
 		}
 	}
 	.loader {
