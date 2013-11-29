@@ -895,8 +895,17 @@
 	    	$('a.slide-back').click(function() {
 		    	var btn = $(this),
 		    		row = btn.closest('.container')
-		    				.find('.active');
+		    				.find('.active'),
+		    		video = row.find('iframe'),
+		    		src = video.attr('src');
+
 		    	btn.tooltip('hide');
+		    	
+		    	setTimeout(function() {
+		    		video.attr('src', '');
+		    		video.attr('src', src);
+		    	}, 500);
+		    	
 		    	slideBack(row);
 		    	return false;
 	    	});
