@@ -107,26 +107,26 @@
 	   		<article class="row slide-right rubrix">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
 	   				<div class="thumbnail">
-	   					<img src="images/rubrix-1.jpg" width="400" height="587">
+	   					<img class="popup" src="images/rubrix-1.jpg" width="400" height="587">
 	   				</div>
 	   				<div class="thumbnail">
-	   					<img src="images/rubrix-2.jpg" width="400" height="587">
+	   					<img class="popup" src="images/rubrix-2.jpg" width="400" height="587">
 	   				</div>
 	   				<div class="thumbnail">
-	   					<img src="images/rubrix-3.jpg" width="400" height="587">
+	   					<img class="popup" src="images/rubrix-3.jpg" width="400" height="587">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-	   						<img src="images/rubrix-1.jpg" width="400" height="587">
+	   						<img class="popup" src="images/rubrix-1.jpg" width="400" height="587">
 		   				</div>
 		   				<div class="thumbnail">
-		   					<img src="images/rubrix-2.jpg" width="400" height="587">
+		   					<img class="popup" src="images/rubrix-2.jpg" width="400" height="587">
 		   				</div>
 		   				<div class="thumbnail">
-		   					<img src="images/rubrix-3.jpg" width="400" height="587">
+		   					<img class="popup" src="images/rubrix-3.jpg" width="400" height="587">
 		   				</div>
 	   				</div>
 	   				<h3>Rubrix
@@ -170,14 +170,14 @@
 	   		<article class="row slide-right poster">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
 	   				<div class="thumbnail">
-	   					<img src="images/poster-full.jpg" width="400" height="587">
+	   					<img class="popup" src="images/poster-full.jpg" width="400" height="587">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   					   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-		   					<img src="images/poster-full.jpg" width="400" height="587">
+		   					<img class="popup" src="images/poster-full.jpg" width="400" height="587">
 		   				</div>
 	   				</div>
 	   				<h3>Poster Design Contest
@@ -215,20 +215,20 @@
 	   		<article class="row slide-right hughes">
 		   		<div class="hidden-xs col-sm-6 col-md-3">
 	   				<div class="thumbnail">
-	   					<img src="images/hughes-1.jpg" width="400" height="308">
+	   					<img class="popup" src="images/hughes-1.jpg" width="400" height="308">
 	   				</div>
 	   				<div class="thumbnail">
-	   					<img src="images/hughes-2.jpg" width="400" height="308">
+	   					<img class="popup" src="images/hughes-2.jpg" width="400" height="308">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-	   						<img src="images/hughes-1.jpg" width="400" height="308">
+	   						<img class="popup" src="images/hughes-1.jpg" width="400" height="308">
 		   				</div>
 		   				<div class="thumbnail">
-		   					<img src="images/hughes-2.jpg" width="400" height="308">
+		   					<img class="popup" src="images/hughes-2.jpg" width="400" height="308">
 		   				</div>
 	   				</div>
 	   				<h3>Kate Hughes Design
@@ -265,20 +265,20 @@
 	   		<article class="row slide-right woody">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
    					<div class="thumbnail">
-	   					<img src="images/woody-sed-1.jpg" width="400" height="342">
+	   					<img class="popup" src="images/woody-sed-1.jpg" width="400" height="342">
 	   				</div>
 	   				<div class="thumbnail">
-	   					<img src="images/woody-sed-2.jpg" width="400" height="342">
+	   					<img class="popup" src="images/woody-sed-2.jpg" width="400" height="342">
 	   				</div>
 		   		</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-		   					<img src="images/woody-sed-1.jpg" width="400" height="342">
+		   					<img class="popup" src="images/woody-sed-1.jpg" width="400" height="342">
 		   				</div>
 		   				<div class="thumbnail">
-		   					<img src="images/woody-sed-2.jpg" width="400" height="342">
+		   					<img class="popup" src="images/woody-sed-2.jpg" width="400" height="342">
 		   				</div>
 	   				</div>
 	   				<h3>Woody Sed
@@ -381,14 +381,14 @@
 	   		<article class="row slide-right christmas">
 	   			<div class="hidden-xs col-sm-6 col-md-3  col-md-offset-3">
 	   				<div class="thumbnail">
-	   					<img src="images/christmas-bureau-full.jpg" width="400" height="820">
+	   					<img class="popup" src="images/christmas-bureau-full.jpg" width="400" height="820">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-3">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-	   						<img src="images/christmas-bureau-full.jpg" width="400" height="820">
+	   						<img class="popup" src="images/christmas-bureau-full.jpg" width="400" height="820">
 	   					</div>
 	   				</div>
 	   				<h3>Christmas Bureau Fundraiser
@@ -400,14 +400,14 @@
 	   		<article class="row slide-right autism">
 	   			<div class="hidden-xs col-sm-6 col-md-6">
 	   				<div class="thumbnail">
-	   					<img src="images/autism-full.jpg" width="650" height="418">
+	   					<img class="popup" src="images/autism-full.jpg" width="650" height="418">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-		   					<img src="images/autism-full.jpg" width="650" height="418">
+		   					<img class="popup" src="images/autism-full.jpg" width="650" height="418">
 		   				</div>
 	   				</div>
 	   				<h3>Autism Awareness Night
@@ -422,14 +422,14 @@
 	   		<article class="row slide-right date">
 		   		<div class="hidden-xs col-sm-6 col-md-6">
 	   				<div class="thumbnail">
-	   					<img src="images/save-date-full.jpg" width="541" height="418">
+	   					<img class="popup" src="images/save-date-full.jpg" width="541" height="418">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-	   						<img src="images/save-date-full.jpg" width="541" height="418">
+	   						<img class="popup" src="images/save-date-full.jpg" width="541" height="418">
 		   				</div>
 	   				</div>
 	   				<h3>Save the Date
@@ -441,14 +441,14 @@
 	   		<article class="row slide-right building">
 	   			<div class="hidden-xs col-sm-6 col-md-6">
    					<div class="thumbnail">
-	   					<img src="images/buccaneer-full.jpg" width="541" height="350">
+	   					<img class="popup" src="images/buccaneer-full.jpg" width="541" height="350">
 	   				</div>
 		   		</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
 		   				<div class="thumbnail">
-		   					<img src="images/buccaneer-full.jpg" width="541" height="350">
+		   					<img class="popup" src="images/buccaneer-full.jpg" width="541" height="350">
 		   				</div>
 	   				</div>
 	   				<h3>Buccaneer Building
@@ -717,6 +717,7 @@
 	   			<p class="lead">I have been working as a professional web developer with 3+ years of experience. 
 	   			</p>
 	   			<p>I obtained my Bachelor's of Computer Information Systems in 2010. My studies did not strictly focus on web development, they focused on principles of software development and programming. This has given me a solid foundation to work with in the world of web development which forces you to dive into more than five different programming languages on a daily basis, and keep up with new technology and frameworks.</p>
+	   			<p>If you are looking for a versatile, dedicated programmer that obsesses over the details to bring your project to life feel free to contact me below.</p> 
 	   		</div>
    		</article>
    	</div>
@@ -790,6 +791,7 @@
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-body">
+	      	<i class="close fa fa-times-circle" data-dismiss="modal"></i>
 	        <img class="modal-image" src="" />
 	      </div>
 	      <div class="modal-footer">
@@ -917,7 +919,7 @@
 		    
 		    });
 	    	
-	    	$('img').click(function() {
+	    	$('img.popup').click(function() {
 		    	var modal = $('#imgModal'),
 		    		img = modal.find('img'),
 		    		image = new Image();

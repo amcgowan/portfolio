@@ -395,6 +395,57 @@ nav.navbar, footer {
 		}
 	}
 }
+article.row.active .thumbnail {
+	cursor: pointer;
+	position: relative;
+	&:before {
+		.transition(.2s);
+		content: "\f002";
+		font-family: "FontAwesome";
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		background: white;
+		width: 22px;
+		height: 22px;
+		color: @gray-darker;
+		font-size: 16px;
+		border: 1px solid @gray-lighter;
+		
+		.opacity(.7);
+	}
+	&:hover:before {
+		.opacity(1);
+	}
+}
+
+#imgModal {
+	.modal-body {
+		padding: 2px 2px 0px 2px;
+	}
+	.modal-footer {
+		margin-top: 0px;
+		padding: 10px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	.close {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		font-size: 30px;
+		.opacity(.8);
+		text-shadow: none;
+		background: white;
+		width: 30px;
+		text-align: center;
+		padding-left: 2px;
+		.border-radius(0px, 0px, 6px, 0px);
+	}
+}
+
 #web-development {
 	background: @gray-lighter;
 	color: @gray-dark;
