@@ -786,7 +786,19 @@
 	  	</div>
    	</div>
    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <div class="modal fade" id="imgModal" tabindex="-1">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	        <img class="modal-image" src="" />
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="js/Chart.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -904,6 +916,22 @@
 		    	}
 		    
 		    });
+	    	
+	    	$('img').click(function() {
+		    	var modal = $('#imgModal'),
+		    		img = modal.find('img'),
+		    		image = new Image();
+
+		    	img.hide();
+		    	modal.modal('show');
+				
+				image.onload = function() {
+					img.attr('src', $(this).attr('src')).show();
+				}
+				
+				image.src = $(this).attr('src');
+		    	
+	    	});
 	    	
 	    	$('#contact form').submit(function() {
 	    		var form = $(this),
