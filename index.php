@@ -106,7 +106,7 @@
 	   <div class="container">
 	   		<article class="row">
 	   			<div class="col-xs-12">
-	   				<h2><a href="#" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>WEB DEVELOPMENT</h2>
+	   				<h2><a href="/web-development" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>WEB DEVELOPMENT</h2>
 	   			</div>
 	   		</article>
 	   		<article class="row slide-right rubrix">
@@ -327,7 +327,7 @@
 		   					<p>Rubrix is a customizable evaluation tool by Discovery Software. My work focussed on UI design and development. </p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="rubrix" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/web-development/rubrix" data-target="rubrix" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   				
@@ -342,7 +342,7 @@
 		   					
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="poster" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/web-development/poster" data-target="poster" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   			</div>
@@ -356,7 +356,7 @@
 		   					<p>A single page website full of precisely timed animations. Animation sequencing is handled using jQuery.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="hughes" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/web-development/hughes" data-target="hughes" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -368,7 +368,7 @@
 		   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="woody" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/web-development/woody" data-target="woody" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   			</div>
@@ -380,7 +380,7 @@
 	   <div class="container">
 	   		<article class="row">
 	   			<div class="col-xs-12">
-	   				<h2><a href="#" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>DESIGN</h2>
+	   				<h2><a href="/design" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>DESIGN</h2>
 	   			</div>
 	   		</article>
 	   		<article class="row slide-right christmas">
@@ -474,7 +474,7 @@
 		   					<p>Billfold insert promoting a fundraiser for the Langley Christmas Bureau. </p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="christmas" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/design/christmas" data-target="christmas" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   				
@@ -489,7 +489,7 @@
 		   					
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="autism" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/design/autism" data-target="autism" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   			</div>
@@ -503,7 +503,7 @@
 		   					<p>Save the date card designed for my wedding in 2012.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="date" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/design/date" data-target="date" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -515,7 +515,7 @@
 		   					<p>A flyer for advertisement purposes of local construction company.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="building" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/design/building" data-target="building" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   			</div>
@@ -528,7 +528,7 @@
 	   		<article class="row">
 	   			<div class="col-xs-12">
 	   				
-	   				<h2><a href="#" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>GAME PROGRAMMING</h2>
+	   				<h2><a href="/game-development" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>GAME PROGRAMMING</h2>
 	   			</div>
 	   		</article>
 	   		<article class="row slide-right gocubego">
@@ -611,7 +611,7 @@
 		   					<p>3D platforming OpenGL Java project. A final project for a computer graphics programming course.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="gocubego" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/game-development/gocubego" data-target="gocubego" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   				
@@ -626,7 +626,7 @@
 		   					
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="unity" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/game-development/unity" data-target="unity" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   			</div>
@@ -640,7 +640,7 @@
 		   					<p>Simple racing game developed with Flash. Final project for a flash programming course.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="mcracers" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/game-development/mcracers" data-target="mcracers" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -652,7 +652,7 @@
 		   					<p>Simple 2D game developed with Java for an intro to object oriented programming course.</p>
 		   				</div>
 		   				<div class="caption more">
-		   					<a data-target="invaders" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   					<a href="/game-development/invaders" data-target="invaders" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
 		   				</div>
 		   				
 		   			</div>
