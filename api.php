@@ -1,6 +1,6 @@
 <?
 include 'seo.php';
-$_SERVER['REQUEST_URI'] = $_SERVER['PATH_INFO'];
+$_SERVER['REQUEST_URI'] = "/".$_GET['uri'];
 $seo = new SEO();
 print $seo->getJSON();
 ?>
