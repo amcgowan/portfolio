@@ -12,6 +12,12 @@
     <meta name="description" content="<?= $seo->getDescription(); ?>">
     <meta name="keywords" content="<?= $seo->getKeywords();?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Andrew McGowan - Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.andrew-mcgowan.com/" />
+    <meta property="og:image" content="http://www.andrew-mcgowan.com/images/home.jpg" />
+    
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link href="/styles/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="/styles/mcgowan.css" rel="stylesheet" media="screen">
