@@ -138,7 +138,7 @@
 	   				</h3>
 	   				<p>Rubrix is a robust and flexible platform that lets you evaluate virtually anything. By creating your own custom Rubrics for a specific subject you can use them to evaluate your boss, your students, or even the beer you are drinking.</p>
 	   				<p>When I first began work at Discovery Software I was fairly inexperienced and had a lot of new tools to learn. However, since I have a strong background in Computer Information Systems, and a desire to learn, I quickly learned the tools and improved all of my skills. After a few months, I had learned to work with Git, LESS, and improved my abilities with JavaScript and CSS. Soon I was designing new user interfaces that interacted with a RESTful API, and pitching new ideas to help improve the application.</p>
-	   				<p>My most recent work on Rubrix involved updating the chrome and incorporating bootstrap across the entire application. This involved updating 100+ files in which code was cleaned up, and the interface was redesigned where necessary.  The screenshots here display the new Rubrix chrome that will be released in the near future</p>
+	   				<p>My most recent work on Rubrix involved updating the chrome and incorporating bootstrap across the entire application. This involved updating 100+ files in which code was cleaned up, and the interface was redesigned where necessary.  The screenshots here display the new Rubrix chrome that will be released in the near future.</p>
 	   				<p>
 	   			</div>
 				<div class="col-sm-6 col-md-3">
@@ -686,7 +686,7 @@
 			   		<p class="text-muted">
 			   			2012 - Present
 			   		</p>
-			   		<p>As part of the Rubrix team I primarily develop user interfaces that interact with our RESTful API. My latest work has involved updating the interface across the entire application to use a new chrome, and use Twitter Bootstrap</p>
+			   		<p>As part of the Rubrix team I primarily develop user interfaces that interact with our RESTful API. My latest work has involved updating the interface across the entire application to use a new chrome, and use Twitter Bootstrap.</p>
 			   </div>
 		   </article>
 		   <article class="row last">
@@ -697,7 +697,7 @@
 				   <p class="text-muted">
 				   		2010 - 2012
 				   </p>
-				   <p>Developed websites to meet specific client needs. My focus here ranged from developing back end functionality with PHP and MySQL to implementing the user interface based on a designers image. A variety of frameworks were used here including WordPress, Drupal, Magento, and CakePHP</p>
+				   <p>Developed websites to meet specific client needs. My focus here ranged from developing back end functionality with PHP and MySQL to implementing the user interface based on a designers image. A variety of frameworks were used here including WordPress, Drupal, Magento, and CakePHP.</p>
 			   </div>
 			   <div class="col-md-6 col-sm-3 hidden-xs">
 			   		<div class="techno-logos">
@@ -752,7 +752,7 @@
    			</div>
    		</article>
    		<article class="slider-nav row">
-	   		<form method="post" action="send_mail.php">
+	   		<form method="post" action="/send_mail.php">
 	   			<?= tokenize(); ?>
 	   				<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
 			   			<div class="row">
