@@ -383,6 +383,16 @@
 	   				<h2><a href="/design" class="btn btn-default slide-back pull-left hint" title="Back"><i class="fa fa-chevron-left"></i></a>DESIGN</h2>
 	   			</div>
 	   		</article>
+	   		<article class="row slide-right ticket">
+	   			<div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
+		   			<h3>Christmas Bureau Raffle Ticket
+	   				</h3>
+	   					<div class="thumbnail popup">
+	   						<img  src="/images/ticket-full.jpg" width="650" height="210">
+	   					</div>
+	   				<p><br/>As part of the fundraising effort by Milestones for the Langley Christmas Bureau they are raffling off a pair of BC Lions tickets and a dinner for two. This ticket was designed as part ticket and part advertising for Milestones social media. The backside of the ticket has QR codes linking to Twitter, Facebook, and Instagram. </p>
+	   			</div>		   		
+	   		</article>
 	   		<article class="row slide-right christmas">
 	   			<div class="hidden-xs col-sm-6 col-md-3  col-md-offset-3">
 	   				<div class="thumbnail popup">
@@ -466,6 +476,20 @@
 	   		</article>
 	   		
 	   		<article class="slider-nav row">
+	   			<div class="col-xs-12 col-sm-6 col-md-3">
+		   			<div class="thumbnail">
+		   				<img src="/images/ticket.jpg" width="300" height="200">
+		   				<div class="caption">
+		   					<h3>Christmas Raffle</h3>
+		   					<p>Raffle ticket produced for Langley Christmas Bureau fundraiser. </p>
+		   				</div>
+		   				<div class="caption more">
+		   					<a href="/design/christmas" data-target="ticket" class="slide btn btn-default">More info <i class="fa fa-chevron-circle-right"></i></a>
+		   				</div>
+		   				
+		   				
+		   			</div>
+		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
 		   				<img src="/images/christmas-bureau.jpg" width="300" height="200">
@@ -507,7 +531,7 @@
 		   				</div>
 		   			</div>
 		   		</div>
-		   		<div class="col-xs-12 col-sm-6 col-md-3">
+		   		<!--<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
 		   				<img src="/images/buccaneer.jpg" width="300" height="200">
 		   				<div class="caption">
@@ -519,7 +543,7 @@
 		   				</div>
 		   				
 		   			</div>
-		   		</div>
+		   		</div>-->
 	   		</article>
 	   </div>
    </section>
