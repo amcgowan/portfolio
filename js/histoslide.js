@@ -4,6 +4,13 @@
 	var histoslide = {
 		stateId: 0,
 		data: {},
+		isListening: true,
+		scrollSpeed: 1000, //pixels per second
+		maxDuration: 1000, //Max duration - pixel speed will increase
+
+		scrollTop: function() {
+			return Math.max($('body').scrollTop(), $('html').scrollTop());
+		},
 		
 		slideTo: function(row, slide) {
 			var section = row.closest('section').attr('id');
@@ -18,6 +25,12 @@
 			histoslide.runCharts(row.closest('.container').find('.' + slide + ' .chart'));
 
 			histoslide.pushState(section, slide);
+			
+			setTimeout(function()  {
+				$('[data-spy="scroll"]').each(function() {
+	    			var $spy = $(this).scrollspy('refresh');
+	    		});
+			}, 1100);
 		},
 		
 		slideBack: function(row) {
@@ -31,19 +44,40 @@
 				.removeClass('slide-left');
 
 			histoslide.pushState(section);
+			
+			setTimeout(function()  {
+				$('[data-spy="scroll"]').each(function() {
+	    			var $spy = $(this).scrollspy('refresh');
+	    		});
+			}, 1100);
 		},
 		
 		scrollPage: function(target, duration, delay) {
-			var fixedOffset = $('#navbar').height();
+			var fixedOffset = $('#navbar').height(),
+				targetPosition = target.offset().top - fixedOffset,
+				distance = Math.abs(targetPosition - histoslide.scrollTop()),
+				duration;
 
-			duration = typeof duration === "undefined" ? 1000 : duration;
+			duration = typeof duration === "undefined" ? 
+						Math.min((distance / histoslide.scrollSpeed) * 1000, 
+								histoslide.maxDuration) : 
+						duration;
 			delay = typeof delay === "undefined" ? 0 : delay;
+
+			histoslide.isListening = false;
 
     		setTimeout(function() {
     			$('html,body').animate({
 			    	scrollTop: target.offset().top - fixedOffset
-		    	}, duration, 'easeInOutQuart');
+		    	}, duration, 'easeInOutCubic');
     		}, delay);
+    		
+    		setTimeout(function() {
+	    		histoslide.isListening = true;
+	    		histoslide.pushState(target.attr('id').replace('#',''));
+    		}, delay + duration);
+    		
+    		return delay + duration;
 		},
 		
 		runCharts: function(charts) {
@@ -80,39 +114,56 @@
 				active = target.find('.active'),
 				isSlide = false,
 				title, url, classes;
-
-			if (typeof slide === 'undefined') {
-				if (active.length) {
-					classes = active.attr('class').split(/\s+/);
-					$.each(classes, function(index, item) {
-						if ($.inArray(item.trim(),excludeClasses) === -1) {
-							slide = item;
-							isSlide = true;
-						}
-					});
+			if (histoslide.isListening) {
+				if (typeof slide === 'undefined') {
+					if (active.length) {
+						classes = active.attr('class').split(/\s+/);
+						$.each(classes, function(index, item) {
+							if ($.inArray(item.trim(),excludeClasses) === -1) {
+								slide = item;
+								isSlide = true;
+							}
+						});
+					}
+				} else {
+					isSlide = true;
 				}
-			} else {
-				isSlide = true;
-			}
-
-			if (isSlide) {
-				title = slide;
-				url = '/' + section + '/' + slide;
-			} else {
-				title = section;
-				url = '/' + section;
-			}
-			if (typeof section !== 'undefined') {
-				if (window.history.state === null ||
-						(window.history.state.hasOwnProperty('url') &&
-						window.history.state.url !== url)) {
-console.log('Pushing: ' + url);
-					history.pushState({
-						url: url
-					}, title, url);
 	
+				if (isSlide) {
+					title = slide;
+					url = '/' + section + '/' + slide;
+				} else {
+					title = section;
+					url = '/' + (section === 'top' ? '' : section);
+				}
+				if (typeof section !== 'undefined') {
+					if (window.history.state === null ||
+							(window.history.state.hasOwnProperty('url') &&
+							window.history.state.url !== url)) {
+	
+						history.pushState({
+							url: url
+						}, title, url);
+						
+						histoslide.updateSEO();
+						
+					}
 				}
 			}
+		},
+		
+		updateSEO: function() {
+			var url = '/api/' + location.pathname;
+			$.ajax({
+				url: url,
+				dataType: 'JSON',
+				success: function(d) {
+					document.title = d.title;
+					$('meta[name=description],meta[name=keywords]').remove();
+					$('head').append('<meta name="description" content="' + d.description + '">' +
+									'<meta name="keywords" content="' + d.keywords + '">');		
+				}
+			});
 		},
 		
 		init: function() {
@@ -122,22 +173,24 @@ console.log('Pushing: ' + url);
 	    		slide = path.length > 2 ? path[2] : '',
 	    		target = $('#' + section),
 	    		active = target.find('.active'),
-	    		row;
+	    		row, scrollDuration;
 		    	if (target.length) {
-			    	window.PortfolioJS.histoslide.scrollPage(target);
+			    	scrollDuration = histoslide.scrollPage(target);
 			    	if (slide !== '') {
 				    	row = $(target.find('article.' + slide));
 				    	if (row.length) {
 				    		setTimeout(function() {
-					    		window.PortfolioJS.histoslide.slideTo($(target).find('article.slider-nav'), slide);
-					    		window.PortfolioJS.histoslide.pushState(section, slide);
-					    	}, 1100);
+					    		histoslide.slideTo($(target).find('article.slider-nav'), slide);
+					    		histoslide.pushState(section, slide);
+					    	}, scrollDuration);
 				    	}
 			    	} else {
 				    	if (active.length) {
-					    	window.PortfolioJS.histoslide.slideBack(active);
+					    	histoslide.slideBack(active);
 				    	}
 			    	}
+		    	} else {
+			    	histoslide.scrollPage($('#top'));
 		    	}
 
 			};
