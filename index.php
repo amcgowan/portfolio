@@ -8,8 +8,8 @@
     <meta name="keywords" content="HTML5, CSS3, JavaScript, Less, PHP, MySQL, Web Developer Portfolio, Andrew McGowan, Andrew, McGowan, Web Design, Web Developer, Graphic Design, Abbotsford Web Developer, Abbotsford Programmer, Abbotsford, Abbotsford BC Web Development, Fraser Valley Web Development, Lower Mainland Web Development,  Goonworx, ACM, Web development in Abbotsford, Programmers in Abbotsford, Abbotsford Programmer, Graphic Designer Abbotsford, Graphic Designers in Abbotsford, Web developers in Abbotsford, Rubrix, Discovery Software, eVision Media, Kate Hughes Design, Code it like a Rockstar, Woody Sed, Milestones Langley, Langley Christmas Bureau, Autism Awareness, Autism, Autism Society of BC, Buccaneer Building, GOCUBEGO, Project Unity, McRacers, Space Invaders, Invaders from Space">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-    <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="styles/mcgowan.css" rel="stylesheet" media="screen">
+    <link href="/styles/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="/styles/mcgowan.css" rel="stylesheet" media="screen">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -106,27 +106,27 @@
 	   		</article>
 	   		<article class="row slide-right rubrix">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/rubrix-1.jpg" width="400" height="587">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/rubrix-1.jpg" width="400" height="587">
 	   				</div>
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/rubrix-2.jpg" width="400" height="587">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/rubrix-2.jpg" width="400" height="587">
 	   				</div>
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/rubrix-3.jpg" width="400" height="587">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/rubrix-3.jpg" width="400" height="587">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-	   						<img class="popup" src="images/rubrix-1.jpg" width="400" height="587">
+		   				<div class="thumbnail popup">
+	   						<img  src="/images/rubrix-1.jpg" width="400" height="587">
 		   				</div>
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/rubrix-2.jpg" width="400" height="587">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/rubrix-2.jpg" width="400" height="587">
 		   				</div>
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/rubrix-3.jpg" width="400" height="587">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/rubrix-3.jpg" width="400" height="587">
 		   				</div>
 	   				</div>
 	   				<h3>Rubrix
@@ -169,15 +169,15 @@
 	   		</article>
 	   		<article class="row slide-right poster">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/poster-full.jpg" width="400" height="587">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/poster-full.jpg" width="400" height="587">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   					   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/poster-full.jpg" width="400" height="587">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/poster-full.jpg" width="400" height="587">
 		   				</div>
 	   				</div>
 	   				<h3>Poster Design Contest
@@ -214,21 +214,21 @@
 	   		</article>
 	   		<article class="row slide-right hughes">
 		   		<div class="hidden-xs col-sm-6 col-md-3">
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/hughes-1.jpg" width="400" height="308">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/hughes-1.jpg" width="400" height="308">
 	   				</div>
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/hughes-2.jpg" width="400" height="308">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/hughes-2.jpg" width="400" height="308">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-	   						<img class="popup" src="images/hughes-1.jpg" width="400" height="308">
+		   				<div class="thumbnail popup">
+	   						<img  src="/images/hughes-1.jpg" width="400" height="308">
 		   				</div>
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/hughes-2.jpg" width="400" height="308">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/hughes-2.jpg" width="400" height="308">
 		   				</div>
 	   				</div>
 	   				<h3>Kate Hughes Design
@@ -264,21 +264,21 @@
 	   		</article>
 	   		<article class="row slide-right woody">
 	   			<div class="hidden-xs col-sm-6 col-md-3">
-   					<div class="thumbnail">
-	   					<img class="popup" src="images/woody-sed-1.jpg" width="400" height="342">
+   					<div class="thumbnail popup">
+	   					<img  src="/images/woody-sed-1.jpg" width="400" height="342">
 	   				</div>
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/woody-sed-2.jpg" width="400" height="342">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/woody-sed-2.jpg" width="400" height="342">
 	   				</div>
 		   		</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/woody-sed-1.jpg" width="400" height="342">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/woody-sed-1.jpg" width="400" height="342">
 		   				</div>
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/woody-sed-2.jpg" width="400" height="342">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/woody-sed-2.jpg" width="400" height="342">
 		   				</div>
 	   				</div>
 	   				<h3>Woody Sed
@@ -316,7 +316,7 @@
 	   		<article class="slider-nav row">
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/rubrix.jpg" width="300" height="200">
+		   				<img src="/images/rubrix.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Rubrix</h3>
 		   					<p>Rubrix is a customizable evaluation tool by Discovery Software. My work focussed on UI design and development. </p>
@@ -330,7 +330,7 @@
 		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/poster.jpg" width="300" height="200">
+		   				<img src="/images/poster.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Design Contest</h3>
 		   					<p>A finalist submission for a workplace poster design contest. This was produced purely with HTML and CSS.   </p>
@@ -345,7 +345,7 @@
 		   		<div class="clearfix visible-sm"></div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/katehughes.jpg" width="300" height="200">
+		   				<img src="/images/katehughes.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Kate Hughes</h3>
 		   					<p>A single page website full of precisely timed animations. Animation sequencing is handled using jQuery.</p>
@@ -357,7 +357,7 @@
 		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/woodysed.jpg" width="300" height="200">
+		   				<img src="/images/woodysed.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Woody Sed</h3>
 		   					<p>A gallery for a travelling production. Uses Supersized for full screen background slideshows, with a custom gallery page.</p>
@@ -380,15 +380,15 @@
 	   		</article>
 	   		<article class="row slide-right christmas">
 	   			<div class="hidden-xs col-sm-6 col-md-3  col-md-offset-3">
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/christmas-bureau-full.jpg" width="400" height="820">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/christmas-bureau-full.jpg" width="400" height="820">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-3">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-	   						<img class="popup" src="images/christmas-bureau-full.jpg" width="400" height="820">
+		   				<div class="thumbnail popup">
+	   						<img  src="/images/christmas-bureau-full.jpg" width="400" height="820">
 	   					</div>
 	   				</div>
 	   				<h3>Christmas Bureau Fundraiser
@@ -399,15 +399,15 @@
 	   		</article>
 	   		<article class="row slide-right autism">
 	   			<div class="hidden-xs col-sm-6 col-md-6">
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/autism-full.jpg" width="650" height="418">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/autism-full.jpg" width="650" height="418">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/autism-full.jpg" width="650" height="418">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/autism-full.jpg" width="650" height="418">
 		   				</div>
 	   				</div>
 	   				<h3>Autism Awareness Night
@@ -421,15 +421,15 @@
 	   		</article>
 	   		<article class="row slide-right date">
 		   		<div class="hidden-xs col-sm-6 col-md-6">
-	   				<div class="thumbnail">
-	   					<img class="popup" src="images/save-date-full.jpg" width="541" height="418">
+	   				<div class="thumbnail popup">
+	   					<img  src="/images/save-date-full.jpg" width="541" height="418">
 	   				</div>
 	   			</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-	   						<img class="popup" src="images/save-date-full.jpg" width="541" height="418">
+		   				<div class="thumbnail popup">
+	   						<img  src="/images/save-date-full.jpg" width="541" height="418">
 		   				</div>
 	   				</div>
 	   				<h3>Save the Date
@@ -440,15 +440,15 @@
 	   		</article>
 	   		<article class="row slide-right building">
 	   			<div class="hidden-xs col-sm-6 col-md-6">
-   					<div class="thumbnail">
-	   					<img class="popup" src="images/buccaneer-full.jpg" width="541" height="350">
+   					<div class="thumbnail popup">
+	   					<img  src="/images/buccaneer-full.jpg" width="541" height="350">
 	   				</div>
 		   		</div>
 	   			<div class="col-xs-12 col-sm-6 col-md-6">
 	   				
 	   				<div class="col-xs-6 pull-left visible-xs">
-		   				<div class="thumbnail">
-		   					<img class="popup" src="images/buccaneer-full.jpg" width="541" height="350">
+		   				<div class="thumbnail popup">
+		   					<img  src="/images/buccaneer-full.jpg" width="541" height="350">
 		   				</div>
 	   				</div>
 	   				<h3>Buccaneer Building
@@ -463,7 +463,7 @@
 	   		<article class="slider-nav row">
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/christmas-bureau.jpg" width="300" height="200">
+		   				<img src="/images/christmas-bureau.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Christmas Bureau</h3>
 		   					<p>Billfold insert promoting a fundraiser for the Langley Christmas Bureau. </p>
@@ -477,7 +477,7 @@
 		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/autism.jpg" width="300" height="200">
+		   				<img src="/images/autism.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Autism Awareness</h3>
 		   					<p>Pamphlet distributed at the 2nd Annual Milestones Autism Awareness night. </p>
@@ -492,7 +492,7 @@
 		   		<div class="clearfix visible-sm"></div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/save-the-date.jpg" width="300" height="200">
+		   				<img src="/images/save-the-date.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Save the Date</h3>
 		   					<p>Save the date card designed for my wedding in 2012.</p>
@@ -504,7 +504,7 @@
 		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/buccaneer.jpg" width="300" height="200">
+		   				<img src="/images/buccaneer.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Buccaneer Building</h3>
 		   					<p>A flyer for advertisement purposes of local construction company.</p>
@@ -600,7 +600,7 @@
 	   		<article class="slider-nav row">
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/go-cube-go.jpg" width="300" height="200">
+		   				<img src="/images/go-cube-go.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>GOCUBEGO!</h3>
 		   					<p>3D platforming OpenGL Java project. A final project for a computer graphics programming course.</p>
@@ -614,7 +614,7 @@
 		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/project-unity.jpg" width="300" height="200">
+		   				<img src="/images/project-unity.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Project Unity</h3>
 		   					<p>2D RPG game using the Microsoft XNA framework. Final project for an independent study of programming.</p>
@@ -629,7 +629,7 @@
 		   		<div class="clearfix visible-sm"></div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/mc-racers.jpg" width="300" height="200">
+		   				<img src="/images/mc-racers.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>McRacers</h3>
 		   					<p>Simple racing game developed with Flash. Final project for a flash programming course.</p>
@@ -641,7 +641,7 @@
 		   		</div>
 		   		<div class="col-xs-12 col-sm-6 col-md-3">
 		   			<div class="thumbnail">
-		   				<img src="images/invaders-from-space.jpg" width="300" height="200">
+		   				<img src="/images/invaders-from-space.jpg" width="300" height="200">
 		   				<div class="caption">
 		   					<h3>Invaders in Space</h3>
 		   					<p>Simple 2D game developed with Java for an intro to object oriented programming course.</p>
@@ -696,10 +696,10 @@
 			   </div>
 			   <div class="col-md-6 col-sm-3 hidden-xs">
 			   		<div class="techno-logos">
-			   			<object type="image/svg+xml" data="svg/wordpress.svg" class="drupal logo"></object>
-			   			<object type="image/svg+xml" data="svg/magento.svg" class="magento logo"></object>
-			   			<object type="image/svg+xml" data="svg/drupal.svg" class="drupal logo"></object>
-			   			<object type="image/svg+xml" data="svg/cakephp.svg" class="cakephp logo"></object>
+			   			<object type="image/svg+xml" data="/svg/wordpress.svg" class="drupal logo"></object>
+			   			<object type="image/svg+xml" data="/svg/magento.svg" class="magento logo"></object>
+			   			<object type="image/svg+xml" data="/svg/drupal.svg" class="drupal logo"></object>
+			   			<object type="image/svg+xml" data="/svg/cakephp.svg" class="cakephp logo"></object>
 			   		</div>
 			   </div>
 		</article>
@@ -729,7 +729,7 @@
    				<h2>CONTACT</h2>
    			</div>
    		</article>
-   		<img src="images/ajax-loader.gif" class="loader"/>
+   		<img src="/images/ajax-loader.gif" class="loader"/>
    		<article class="row slide-right send working">
    			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
 		   		<div class="sent text-center">
@@ -806,78 +806,39 @@
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
-    <script src="js/Chart.min.js"></script>
+    <script src="/js/Chart.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/easing.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/easing.min.js"></script>
+    <script src="/js/histoslide.js"></script>
     <script type="text/javascript">
     	var resizeTimeout; 
-    	
-    	function runCharts(charts) {
-	    	charts.each(function(i,o) {
-		    	var chart = $(o),
-		    		options = {
-		    			segmentShowStroke: false,
-			    		percentageInnerCutout : 90,	
-		    		},
-		    		data = [
-		    			{
-			    			value: parseInt(chart.attr('data-value'), 10),
-			    			color: "#1C3A36"	    			
-		    			},
-		    			{
-		    				value: 100 - parseInt(chart.attr('data-value'), 10),
-		    				color: "#eeeeee"
-		    			}
-
-		    		],
-		    		canvas = chart.find('canvas'),
-		    		ctx = canvas.get(0).getContext('2d');
-		    		ctx.clearRect(0, 0, canvas.width(), canvas.height());
-		    		setTimeout(function() {
-		    			new Chart(ctx).Doughnut(data,options);
-		    		}, 1500);
-	    	});
-    	}
   
 		function isValidEmailAddress(emailAddress) {
 		     var pattern = new RegExp(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/);
 		     return pattern.test(emailAddress);
 		};
-
-    	function slideTo(row, slide) {
-	    	row.addClass('slide-left')
-	    			.parent()
-	    			.addClass('slide')
-	    			.find('.' + slide)
-	    			.removeClass('slide-right')
-	    			.addClass('active');
-	    	
-	    	runCharts(row.closest('.container').find('.' + slide + ' .chart'));
-    	}
     	
-    	function slideBack(row) {
-	    	row.addClass('slide-right')
-	    		.removeClass('active')
-	    		.parent()
-	    		.removeClass('slide')
-	    		.find('.slide-left')
-	    		.removeClass('slide-left');
+    	function startUp() {
+	    	var path = location.pathname.split('/'),
+	    		section = path[1],
+	    		slide = path.length > 2 ? path[2] : '',
+	    		target = $('#' + section),
+	    		row;
+	    	if (target.length) {
+		    	window.PortfolioJS.histoslide.scrollPage(target);
+		    	if (slide !== '') {
+			    	row = $(target.find('article.' + slide));
+			    	if (row.length) {
+			    		setTimeout(function() {
+				    		window.PortfolioJS.histoslide.slideTo($(target).find('article.slider-nav'), slide);
+				    		window.PortfolioJS.histoslide.pushState(section, slide);
+				    	}, 1100);
+			    	}
+		    	}
+	    	}
     	}
-    	
-    	function scrollPage(target, duration, delay) {
-    		var fixedOffset = $('#navbar').height();
-
-    		duration = typeof duration === "undefined" ? 1000 : duration;
-    		delay = typeof delay === "undefined" ? 0 : delay;
-
-    		setTimeout(function() {
-    			$('html,body').animate({
-			    	scrollTop: target.offset().top - fixedOffset
-		    	}, duration, 'easeInOutQuart');
-    		}, delay);
-    	}
-    	
+ 
     	$(document).ready(function(e) {
     		$('body').scrollspy({ target: '#navbar', offset: $('#navbar').height() + 5 });
     		
@@ -888,29 +849,48 @@
 	    		}), 500);
     		});
     		
+    		$('body').on('activate.bs.scrollspy', function () {
+			  var nav = $('#navbar').find('li.active'),
+			  	  section;
+			  if (nav.length) {
+				  section = nav.find('a').attr('href').replace('#', '');
+				  if (section === 'top') {
+					  section = '';
+				  }
+			  } else {
+				  section = '';
+			  }
+			  
+			  window.PortfolioJS.histoslide.pushState(section);
+
+			});
+    		
 	    	$('.btn.slide').click(function() {
-		    	var btn = $(this);
+		    	var btn = $(this),
+		    		section = btn.closest('section').attr('id'),
+		    		slide = btn.attr('data-target');
 
-		    	slideTo(btn.closest('.row'), btn.attr('data-target'));
-		    	scrollPage(btn.closest('.container'), 350, 400);
-
+		    	window.PortfolioJS.histoslide.slideTo(btn.closest('.row'), slide);
+		    	window.PortfolioJS.histoslide.scrollPage(btn.closest('.container'), 350, 400);
+		    	
+		    	setTimeout(function() {
+		    		window.PortfolioJS.histoslide.pushState(section, slide);
+		    	}, 1100);
+		    	
 		    	return false;
 	    	});
 	    	$('a.slide-back').click(function() {
 		    	var btn = $(this),
+		    		section = btn.closest('section').attr('id'),
 		    		row = btn.closest('.container')
 		    				.find('.active'),
-		    		video = row.find('iframe'),
-		    		src = video.attr('src');
-
+		    		path = location.pathname.split('/');
 		    	btn.tooltip('hide');
 		    	
-		    	setTimeout(function() {
-		    		video.attr('src', '');
-		    		video.attr('src', src);
-		    	}, 500);
+		    	window.PortfolioJS.histoslide.slideBack(row);
 		    	
-		    	slideBack(row);
+		    	window.PortfolioJS.histoslide.pushState(section)
+		    	
 		    	return false;
 	    	});
 	    	$('.hint').tooltip({
@@ -920,31 +900,38 @@
 	    	$('a:not(.slide)').click(function() {
 	    		var link = $(this),
 		    		href = link.attr('href'),
+		    		target = $(href),
+		    		active = target.find('.active'),
 		    		data = $('body').data();
 
 		    	if (typeof href !== "undefined" && !link.hasClass('slide-back') && href.charAt(0) === "#") {
 		    		data['bs.scrollspy'].options.offset = $('#navbar').height() + 5;
 		    		data['bs.scrollspy'].refresh();
 		    		
-			    	scrollPage($(href));
+			    	window.PortfolioJS.histoslide.scrollPage($(href));
+			    	if (active.length) {
+				    	window.PortfolioJS.histoslide.slideBack(active);
+			    	}
 			    	return false;
 		    	}
 		    
 		    });
 	    	
-	    	$('img.popup').click(function() {
+	    	$('.popup').click(function() {
 		    	var modal = $('#imgModal'),
+		    		thumb = $(this).find('img'),
 		    		img = modal.find('img'),
-		    		image = new Image();
-
+		    		image = new Image(),
+		    		src = thumb.attr('src').replace("images/", "images/highres/");
+		    	
 		    	img.hide();
 		    	modal.modal('show');
 				
 				image.onload = function() {
-					img.attr('src', $(this).attr('src')).show();
+					img.attr('src', src).show();
 				}
 				
-				image.src = $(this).attr('src');
+				image.src = src;
 		    	
 	    	});
 	    	
@@ -968,7 +955,7 @@
 	    		});
 	    		
 	    		if (valid) {
-		    		slideTo(form.closest('article'), 'send');
+		    		window.PortfolioJS.histoslide.slideTo(form.closest('article'), 'send');
 		    		$('.loader').fadeIn();
 		    		$.ajax({
 			    		url: form.attr('action'),
@@ -996,6 +983,10 @@
 	    		
 		    	return false;
 	    	});
+	    	
+	    	
+	    	startUp();
+	    	
     	});
     </script>
   </body>
