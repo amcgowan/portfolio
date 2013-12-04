@@ -11,7 +11,7 @@ class SEO {
 	private function getPageData($url) {
 		global $db;
 
-		$url = mysql_real_escape_string($url);
+		$url = mysql_real_escape_string($url, $db);
 		$sql = "select url, title, description, keywords from pages where url = '$url'";
 		
 		$result = mysqli_query($db, $sql);
