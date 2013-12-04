@@ -1,11 +1,16 @@
-<? include 'form_security.php'; ?>
+<? 
+	include 'form_security.php'; 
+	include 'seo.php';
+	
+	$seo = new SEO();
+?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Andrew C. McGowan | Web Developer Portfolio</title>
+    <title><?= $seo->getTitle(); ?></title>
     <meta name="author" content="Andrew McGowan">
-    <meta name="description" content="Andrew McGowan is a web developer and designer located in the Fraser Valley. His skills are mostly based in UI development, however, he is also a solid programmer and great with PHP and MySQL. He has experience with JavaScript, CSS3, Less, HTML5, PHP, MySQL. He is also currently learning more about the operations side of development while managing his own portfolio.">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript, Less, PHP, MySQL, Web Developer Portfolio, Andrew McGowan, Andrew, McGowan, Web Design, Web Developer, Graphic Design, Abbotsford Web Developer, Abbotsford Programmer, Abbotsford, Abbotsford BC Web Development, Fraser Valley Web Development, Lower Mainland Web Development,  Goonworx, ACM, Web development in Abbotsford, Programmers in Abbotsford, Abbotsford Programmer, Graphic Designer Abbotsford, Graphic Designers in Abbotsford, Web developers in Abbotsford, Rubrix, Discovery Software, eVision Media, Kate Hughes Design, Code it like a Rockstar, Woody Sed, Milestones Langley, Langley Christmas Bureau, Autism Awareness, Autism, Autism Society of BC, Buccaneer Building, GOCUBEGO, Project Unity, McRacers, Space Invaders, Invaders from Space">
+    <meta name="description" content="<?= $seo->getDescription(); ?>">
+    <meta name="keywords" content="<?= $seo->getKeywords();?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link href="/styles/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -33,25 +38,25 @@
 	  		<div class="collapse navbar-collapse am-navbar pull-right">
 	  			<ul class="nav navbar-nav">
 	  				<li class="hidden">
-	  					<a href="#top">Top</a>
+	  					<a data-target="#top" href="#top">Top</a>
 	  				<li>
 	  				<li>
-	  					<a href="#web-development">Web</a>
+	  					<a class="slide-to" data-target="#web-development" href="/web-development">Web</a>
 	  				</li>
 	  				<li>
-	  					<a href="#design">Design</a>
+	  					<a class="slide-to" data-target="#design" href="/design">Design</a>
 	  				</li>
 	  				<li>
-	  					<a href="#game-development">Games</a>
+	  					<a class="slide-to" data-target="#game-development" href="/game-development">Games</a>
 	  				</li>
 	  				<li>
-	  					<a href="#work-experience">Work Experience</a>
+	  					<a class="slide-to" data-target="#work-experience" href="/work-experience">Work Experience</a>
 	  				</li>
 	  				<li>
-	  					<a href="#about">About</a>
+	  					<a class="slide-to" data-target="#about" href="/about">About</a>
 	  				</li>
 	  				<li>
-	  					<a href="#contact">Contact</a>
+	  					<a class="slide-to" data-target="#contact" href="/contact">Contact</a>
 	  				</li>
 	  			</ul>
 	  		</div>
@@ -63,7 +68,7 @@
 	  		<hr />
 	  		<p class="lead col-sm-6 col-sm-offset-3">Web developer in the Fraser Valley specializing in front end design and development.</p>
 	  		<div class="clearfix"></div>
-	  		<a href="#web-development" class="btn btn-lg btn-success"><i class="fa fa-angle-down"></i> See my work</a>	
+	  		<a data-target="#web-development" href="/web-development" class="slide-to btn btn-lg btn-success"><i class="fa fa-angle-down"></i> See my work</a>	
 	
 	  	</div>
   	</div>
@@ -853,7 +858,7 @@
 			  var nav = $('#navbar').find('li.active'),
 			  	  section;
 			  if (nav.length) {
-				  section = nav.find('a').attr('href').replace('#', '');
+				  section = nav.find('a').attr('data-target').replace('#', '');
 				  if (section === 'top') {
 					  section = '';
 				  }
@@ -871,7 +876,7 @@
 		    		slide = btn.attr('data-target');
 
 		    	window.PortfolioJS.histoslide.slideTo(btn.closest('.row'), slide);
-		    	window.PortfolioJS.histoslide.scrollPage(btn.closest('.container'), 350, 400);
+		    	window.PortfolioJS.histoslide.scrollPage(btn.closest('section'), 350, 400);
 		    	
 		    	setTimeout(function() {
 		    		window.PortfolioJS.histoslide.pushState(section, slide);
@@ -897,9 +902,9 @@
 		    	container: 'body'
 	    	});
 	    	
-	    	$('a:not(.slide)').click(function() {
+	    	$('a.slide-to').click(function() {
 	    		var link = $(this),
-		    		href = link.attr('href'),
+		    		href = link.attr('data-target'),
 		    		target = $(href),
 		    		active = target.find('.active'),
 		    		data = $('body').data();
