@@ -749,6 +749,11 @@
 		   			<h3>You have already contacted me</h3>
 		   			<p>Your previous message has been received and I will get back to you shortly.</p>
 		   		</div>
+		   		<div class="nothing-happening text-center">
+		   			<h3>Oops!</h3>
+		   			<p>Looks like you haven't filled in the contact form</p>
+		   			<a class="btn btn-success contact-slide-back" href="/contact">Go back</a>
+		   		</div>
    			</div>
    		</article>
    		<article class="slider-nav row">
@@ -884,7 +889,7 @@
 		    	
 		    	return false;
 	    	});
-	    	$('a.slide-back').click(function() {
+	    	$('a.slide-back, a.contact-slide-back').click(function() {
 		    	var btn = $(this),
 		    		section = btn.closest('section').attr('id'),
 		    		row = btn.closest('.container')
@@ -943,6 +948,8 @@
 	    	$('#contact form').submit(function() {
 	    		var form = $(this),
 	    			valid = true;
+
+	    		$('.nothing-happening').hide();
 
 	    		form.find('.form-control').each(function(i, o) {
 		    		var input = $(o);
